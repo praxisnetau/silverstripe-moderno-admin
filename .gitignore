@@ -1,0 +1,4 @@
+*.komodoproject
+.komodotools/
+.DS_Store
+Thumbs.db

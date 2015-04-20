@@ -1,0 +1,23 @@
+{
+	"name": "PraxisNetAu/silverstripe-moderno-admin",
+	"description": "A SilverStripe module to give the CMS a more modern, flat appearance.",
+	"type": "silverstripe-module",
+	"homepage": "https://github.com/PraxisNetAu/silverstripe-moderno-admin",
+	"keywords": ["silverstripe", "moderno", "admin", "cms", "flat", "theme", "skin"],
+	"license": "BSD-3-Clause",
+	"authors": [
+		{
+			"name": "Colin Tucker",
+			"email": "colin@praxis.net.au"	
+		}
+	],
+	"require": {
+		"php": ">=5.3.2",
+		"silverstripe/cms": "~3.1",
+		"silverstripe/framework": "~3.1"
+	},
+	"extra": {
+		"installer-name": "silverstripe-moderno-admin"
+	},
+	"target-dir": "moderno-admin"
+}
