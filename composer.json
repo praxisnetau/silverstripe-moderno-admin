@@ -1,5 +1,5 @@
 {
-	"name": "PraxisNetAu/silverstripe-moderno-admin",
+	"name": "praxisnetau/silverstripe-moderno-admin",
 	"description": "A SilverStripe module to give the CMS a more modern, flat appearance.",
 	"type": "silverstripe-module",
 	"homepage": "https://github.com/PraxisNetAu/silverstripe-moderno-admin",
