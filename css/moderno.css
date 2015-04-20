@@ -1167,7 +1167,10 @@ fieldset.switch-states .switch .slide-button
 	background: #A0A8AE;
 }
 
-.cms .ss-ui-button.ss-ui-action-constructive:active, .cms .ss-ui-button.ss-ui-action-constructive:focus, .cms .ss-ui-button.ss-ui-action-constructive.ui-state-active, .cms .ss-ui-button.ss-ui-action-constructive.ui-state-focus
+.cms .ss-ui-button.ss-ui-action-constructive:active,
+.cms .ss-ui-button.ss-ui-action-constructive:focus,
+.cms .ss-ui-button.ss-ui-action-constructive.ui-state-active,
+.cms .ss-ui-button.ss-ui-action-constructive.ui-state-focus
 {
 	border: 0;
 
@@ -1212,7 +1215,10 @@ div.Actions > input.ss-ui-button
 	background: #139FDA none;
 }
 
-.tree-holder.jstree-apple a, .tree-holder.jstree-apple a:link, .cms-tree.jstree-apple a, .cms-tree.jstree-apple a:link
+.tree-holder.jstree-apple a,
+.tree-holder.jstree-apple a:link,
+.cms-tree.jstree-apple a,
+.cms-tree.jstree-apple a:link
 {
 	padding: 4px 6px 4px 4px;
 	
@@ -1455,6 +1461,17 @@ div.CMSProfileController .cms-content-header .cms-content-header-info .section-i
 	border-color: #68B8DF;
 
 	background-color: #E8F8FF;
+}
+
+.cms-notice
+{
+	margin: 5px 0;
+
+	border: 1px solid #C4C6C8;
+
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
 }
 
 /* Content Styles:
