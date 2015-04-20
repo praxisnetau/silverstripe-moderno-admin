@@ -1,4 +1,4 @@
 LeftAndMain:
   extra_requirements_css:
-    - moderno-admin/css/moderno.min.css
-    - moderno-admin/css/moderno-editor.min.css
+    - silverstripe-moderno-admin/css/moderno.min.css
+    - silverstripe-moderno-admin/css/moderno-editor.min.css

@@ -26,7 +26,7 @@ require: "praxisnetau/silverstripe-moderno-admin": "dev-master"
 
 #### Manual:
 
-To install this module manually, clone or download the repo, copy it to your document root ensuring the folder is called ```moderno-admin``` and finally run a ```/dev/build```.
+To install this module manually, clone or download the repo, copy it to your document root ensuring the folder is called ```silverstripe-moderno-admin``` and finally run a ```/dev/build```.
 
 ## Contribution ##
 

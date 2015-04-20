@@ -19,5 +19,5 @@
 	"extra": {
 		"installer-name": "silverstripe-moderno-admin"
 	},
-	"target-dir": "moderno-admin"
+	"target-dir": "silverstripe-moderno-admin"
 }
