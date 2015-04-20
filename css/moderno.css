@@ -156,6 +156,10 @@ body, html, .ui-widget, .ss-ui-button, .ui-widget button, .ui-widget-content, .u
 .cms-menu-list li a .icon
 {
 	opacity: 1;
+	
+	width: 18px;
+	
+	text-align: center;
 }
 
 /* Context Menu Styles
