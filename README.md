@@ -21,7 +21,7 @@ A [SilverStripe](http://silverstripe.org) module to give the CMS a more modern, 
 #### Composer:
 
 ```
-require: "PraxisNetAu/silverstripe-moderno-admin": "dev-master"
+require: "praxisnetau/silverstripe-moderno-admin": "dev-master"
 ```
 
 #### Manual:
