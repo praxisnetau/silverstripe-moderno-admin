@@ -301,10 +301,16 @@ body, html, .ui-widget, .ss-ui-button, .ui-widget button, .ui-widget-content, .u
 	margin-left: 10px;
 }
 
+#cms-content-treeview .cms-content-toolbar
+{
+	margin-top: 8px;
+}
+
 .cms-content-tools #cms-content-treeview .cms-content-toolbar
 {
 	padding: 5px 0px 5px 2px;
 	
+	margin-top: 0px !important;
 	margin-bottom: 0px !important;
 }
 
@@ -466,9 +472,10 @@ body, html, .ui-widget, .ss-ui-button, .ui-widget button, .ui-widget-content, .u
 
 .cms-content-batchactions .view-mode-batchactions-wrapper
 {
-	border: 0px;
+	border: 0;
 
 	padding: 6px;
+	margin-bottom: 0;
 	
 	background: #80888E none;
 	
@@ -1465,7 +1472,7 @@ div.CMSProfileController .cms-content-header .cms-content-header-info .section-i
 
 .cms-notice
 {
-	margin: 5px 0;
+	margin: 15px 0 0;
 
 	border: 1px solid #C4C6C8;
 
