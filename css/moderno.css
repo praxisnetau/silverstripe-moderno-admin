@@ -34,7 +34,7 @@ body, html, .ui-widget, .ss-ui-button, .ui-widget button, .ui-widget-content, .u
 
 .cms-logo a
 {
-   margin-left: 2px;
+	margin-left: 2px;
 
 	background: url(../images/logos/silverstripe.svg);
 	background-size: contain;
@@ -43,8 +43,8 @@ body, html, .ui-widget, .ss-ui-button, .ui-widget button, .ui-widget-content, .u
 
 .cms-logo span
 {
-   font-size: 13px;
-   font-weight: 500;
+	font-size: 13px;
+	font-weight: 500;
 	
 	margin-left: 32px;
 }
@@ -59,7 +59,7 @@ body, html, .ui-widget, .ss-ui-button, .ui-widget button, .ui-widget-content, .u
 {
 	padding-left: 2px;
 
-   border-top: 1px solid #FFF;
+	border-top: 1px solid #FFF;
 }
 
 .cms-login-status .logout-link
@@ -113,7 +113,7 @@ body, html, .ui-widget, .ss-ui-button, .ui-widget button, .ui-widget-content, .u
 {
 	margin: 2px;
 
-   color: #BFC0C0;
+	color: #BFC0C0;
 
 	border-top: 0;
 	border-bottom: 0;
@@ -130,9 +130,9 @@ body, html, .ui-widget, .ss-ui-button, .ui-widget button, .ui-widget-content, .u
 .cms-menu-list li a:focus,
 .cms-menu-list li a:active
 {
-   color: #FFF;
+	color: #FFF;
 
-   border: none;
+	border: none;
 
 	background-image: none;
 	background-color: rgba(255, 255, 255, 0.1);
@@ -172,7 +172,7 @@ body, html, .ui-widget, .ss-ui-button, .ui-widget button, .ui-widget-content, .u
 
 #vakata-contextmenu.jstree-apple-context, #vakata-contextmenu.jstree-apple-context li ul
 {
-   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .cms #vakata-contextmenu li a, .TreeDropdownField .treedropdownfield-panel #vakata-contextmenu li a
@@ -182,7 +182,7 @@ body, html, .ui-widget, .ss-ui-button, .ui-widget button, .ui-widget-content, .u
 
 .cms #vakata-contextmenu li a:hover, .TreeDropdownField .treedropdownfield-panel #vakata-contextmenu li a:hover
 {
-   border-radius: 0;
+	border-radius: 0;
 	
 	background: #139FDA none;
 }
@@ -243,7 +243,7 @@ body, html, .ui-widget, .ss-ui-button, .ui-widget button, .ui-widget-content, .u
 
 .cms-panel.collapsed .cms-panel-toggle a span:before
 {
-   content: "\f0a9";
+	content: "\f0a9";
 }
 
 .cms .ss-ui-action-tabset.action-menus.ss-tabset .ui-tabs-panel
@@ -413,7 +413,7 @@ body, html, .ui-widget, .ss-ui-button, .ui-widget button, .ui-widget-content, .u
 .cms-content-controls .preview-selector a.chzn-single:hover,
 .cms-content-controls .preview-selector a.chzn-single.chzn-single-with-drop
 {
-   background: #DCDFE1 none;
+	background: #DCDFE1 none;
 
 	box-shadow: none;
 }
@@ -489,7 +489,7 @@ body, html, .ui-widget, .ss-ui-button, .ui-widget button, .ui-widget-content, .u
 
 .cms-content-batchactions .cms-batch-actions .dropdown .chzn-single
 {
-   color: #FFF;
+	color: #FFF;
 	
 	border: 0;
 	
@@ -537,7 +537,7 @@ fieldset.switch-states
 
 fieldset.switch-states .switch
 {
-   width: 180px;
+	width: 180px;
 	
 	padding: 0px;
 
@@ -598,10 +598,10 @@ fieldset.switch-states .switch .slide-button
 .ui-tabs .ui-tabs-nav.cms-tabset-nav-primary .ui-state-default,
 .ui-tabs .cms-content-header-tabs .ui-tabs-nav .ui-state-default
 {
-   border-left: 0;
+	border-left: 0;
 	border-right: 1px solid #B3B3B3;
 
-   box-shadow: none;
+	box-shadow: none;
 	
 	background-color: #C8CACC;
 	background-image: none;
@@ -673,7 +673,7 @@ fieldset.switch-states .switch .slide-button
 
 .field
 {
-   color: #40484E;
+	color: #40484E;
 
 	margin: 10px 0;
 	
@@ -890,11 +890,11 @@ fieldset.switch-states .switch .slide-button
 {
 	color: #FFF;
 
-   content: "\f0ab";
+	content: "\f0ab";
 	
-   font-family: "FontAwesome";
-   font-size: 13px;
-   font-weight: 400;
+	font-family: "FontAwesome";
+	font-size: 13px;
+	font-weight: 400;
 	line-height: 30px;
 }
 
@@ -936,7 +936,7 @@ fieldset.switch-states .switch .slide-button
 	font-size: 13px;
 	font-weight: 500;
 
-   border-color: #C4C6C8;
+	border-color: #C4C6C8;
 }
 
 .ss-toggle .ui-accordion-header a
@@ -1035,7 +1035,7 @@ fieldset.switch-states .switch .slide-button
 .cms .ss-ui-button.ui-state-hover,
 .cms .ss-ui-button:hover
 {
-   background: #A0A8AE;
+	background: #A0A8AE;
 	
 	box-shadow: none;
 }
@@ -1078,16 +1078,16 @@ fieldset.switch-states .switch .slide-button
 .cms .ss-ui-button.ss-ui-action-constructive,
 .field.urlsegment button.update
 {
-   font-weight: 500;
+	font-weight: 500;
 
-   background: #0F8845 none;
+	background: #0F8845 none;
 }
 
 .cms .ss-ui-button.ss-ui-action-constructive.ui-state-hover,
 .cms .ss-ui-button.ss-ui-action-constructive:hover,
 .field.urlsegment button.update:hover
 {
-   background: #2FA865 none;
+	background: #2FA865 none;
 }
 
 .cms .field.urlsegment button.cancel,
@@ -1159,12 +1159,12 @@ fieldset.switch-states .switch .slide-button
 
 	box-shadow: none;
 	
-   background: #80888E;
+	background: #80888E;
 }
 
 .cms .ss-ui-button:hover
 {
-   background: #A0A8AE;
+	background: #A0A8AE;
 }
 
 .cms .ss-ui-button.ss-ui-action-constructive:active, .cms .ss-ui-button.ss-ui-action-constructive:focus, .cms .ss-ui-button.ss-ui-action-constructive.ui-state-active, .cms .ss-ui-button.ss-ui-action-constructive.ui-state-focus
@@ -1207,7 +1207,7 @@ div.Actions > input.ss-ui-button
 .jstree-apple .jstree-hovered,
 .jstree-apple a.jstree-hovered
 {
-   color: #FFF !important;
+	color: #FFF !important;
 
 	background: #139FDA none;
 }
@@ -1525,7 +1525,7 @@ div.cms_backlink a.backlink .ui-button-text
 
 #PageType ul li
 {
-   width: 98%;
+	width: 98%;
 
 	padding: 5px 0 5px 15px;
 }
@@ -1667,7 +1667,7 @@ fieldset.ss-gridfield
 {
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
-   border-radius: 0;
+	border-radius: 0;
 }
 
 .cms table.ss-gridfield-table td:first-child,
@@ -1686,7 +1686,7 @@ fieldset.ss-gridfield
 {
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
-   border-radius: 0;
+	border-radius: 0;
 	
 	padding: 4px 8px;
 
@@ -1785,10 +1785,9 @@ fieldset.ss-gridfield
 .cms table.ss-gridfield-table tr th.col-Actions button.ss-ui-button:before,
 .cms table.ss-gridfield-table tr.filter-header th button.ss-ui-button:before
 {
-   color: #FFF;
+	color: #FFF;
 
-   font-size: 18px;
-
+	font-size: 18px;
 	font-family: 'FontAwesome';
 }
 
@@ -1833,9 +1832,10 @@ fieldset.ss-gridfield
 .cms table.ss-gridfield-table tbody td a.view-link:before
 {
 	color: #60686E;
-   font-family: "FontAwesome";
-   font-size: 18px;
-   font-weight: 400;
+
+	font-family: "FontAwesome";
+	font-size: 18px;
+	font-weight: 400;
 }
 
 .cms table.ss-gridfield-table tbody td a.edit-link:hover,
@@ -1846,14 +1846,14 @@ fieldset.ss-gridfield
 
 .cms table.ss-gridfield-table tbody td a.edit-link:before
 {
-   content: "\f044";
+	content: "\f044";
 }
 
 .cms table.ss-gridfield-table tbody td a.view-link:before
 {
 	font-size: 16px;
 
-   content: "\f002";
+	content: "\f002";
 }
 
 .cms table.ss-gridfield-table tbody td button.gridfield-button-delete span.ui-icon
@@ -1868,16 +1868,16 @@ fieldset.ss-gridfield
 	width: 18px;
 	height: 18px;
 	
-   line-height: 18px;
+	line-height: 18px;
 }
 
 .cms table.ss-gridfield-table tbody td button.gridfield-button-delete span.ui-icon:before
 {
 	color: #B63051;
-   content: "\f056";
-   font-family: "FontAwesome";
-   font-size: 18px;
-   font-weight: 400;
+	content: "\f056";
+	font-family: "FontAwesome";
+	font-size: 18px;
+	font-weight: 400;
 }
 
 .cms table.ss-gridfield-table tbody td button.gridfield-button-delete:active,
@@ -1893,7 +1893,7 @@ fieldset.ss-gridfield
 
 .cms table.ss-gridfield-table tbody tr.ss-gridfield-no-items td
 {
-   padding: 9px 13px;
+	padding: 9px 13px;
 }
 
 .cms .ss-gridfield > div.ss-gridfield-buttonrow-before .action
@@ -1959,7 +1959,7 @@ fieldset.ss-gridfield
 .ui-datepicker th
 {
 	color: #666;
-   font-weight: 500;
+	font-weight: 500;
 }
 
 .ui-datepicker .ui-widget-header
@@ -2177,12 +2177,12 @@ fieldset.ss-gridfield
 
 .ReportAdmin > fieldset > h3
 {
-   color: #444;
+	color: #444;
 	
-   font-size: 15px;
-   font-weight: 500;
+	font-size: 15px;
+	font-weight: 500;
 	
-   margin: 5px 0 15px;
+	margin: 5px 0 15px;
 }
 
 .ReportAdmin > fieldset > input
@@ -2206,7 +2206,7 @@ div.SecurityAdmin #Form_EditForm_Members,
 div.SecurityAdmin #Form_EditForm_Groups,
 div.SecurityAdmin #Form_EditForm_Roles
 {
-   margin-top: 0;
+	margin-top: 0;
 	margin-bottom: 15px;
 	
 	padding-bottom: 20px;
@@ -2223,7 +2223,7 @@ div.SecurityAdmin #Form_EditForm_Roles
 
 #CanViewType, #CanEditType, #CanCreateTopLevelType
 {
-   padding-bottom: 10px;
+	padding-bottom: 10px;
 }
 
 #ViewerGroups, #EditorGroups, #CreateTopLevelGroups
