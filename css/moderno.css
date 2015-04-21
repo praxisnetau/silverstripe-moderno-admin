@@ -311,6 +311,11 @@ body, html, .ui-widget, .ss-ui-button, .ui-widget button, .ui-widget-content, .u
 	margin-top: 0px !important;
 }
 
+.cms-content-tools #cms-content-treeview .cms-notice
+{
+	margin: 5px 2px !important;
+}
+
 .cms-content-tools #cms-content-treeview .cms-content-toolbar
 {
 	padding: 5px 0px 5px 2px;
