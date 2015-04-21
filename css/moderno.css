@@ -591,9 +591,33 @@ fieldset.switch-states .switch .slide-button
 /* Tabs Styles:
 ======================================================================================================================== */
 
+#Root.ui-tabs > .ui-tabs-nav
+{
+	margin-top: 15px;
+}
+
+.ui-tabs .ui-tabs-nav
+{
+	margin-top: 0;
+}
+
+.ui-tabs .ui-tabs-nav li
+{
+	margin-right: -1px;
+}
+
 .ui-tabs .ui-tabs-nav li a
 {
 	padding: 0 14px;
+	
+	line-height: 37px;
+}
+
+.ui-tabs .ui-tabs-nav .ui-state-default
+{
+	border: 1px solid #B8BABC;
+
+	background: #D4D6D8 none;
 }
 
 .ui-tabs .ui-tabs-nav .ui-state-default a
@@ -601,6 +625,13 @@ fieldset.switch-states .switch .slide-button
 	color: #555;
 	
 	text-shadow: none;
+}
+
+.ui-tabs .ui-tabs-nav .ui-state-active
+{
+	border: 1px solid #B8BABC;
+	
+	background: #E6EAED none;
 }
 
 .ui-tabs .ui-tabs-nav .ui-state-active a
@@ -679,9 +710,24 @@ fieldset.switch-states .switch .slide-button
 	padding: 15px;
 }
 
+.ui-tabs .ui-tabs-nav ~ .ui-tabs-panel
+{
+	border-top: 1px solid #C4C6C8;
+}
+
+.ui-tabs.ss-tabset-tabshidden .ui-tabs-panel
+{
+	border-top: none;
+}
+
 .cms-edit-form .ui-tabs-panel .message
 {
-	margin: 0 0 15px;
+	margin: 10px 0 0;
+}
+
+.CMSPageHistoryController .ui-tabs-panel .message
+{
+	margin: 0 0 10px;
 }
 
 /* Field Styles:
