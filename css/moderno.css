@@ -301,16 +301,20 @@ body, html, .ui-widget, .ss-ui-button, .ui-widget button, .ui-widget-content, .u
 	margin-left: 10px;
 }
 
-#cms-content-treeview .cms-content-toolbar
+#cms-content-treeview .cms-tree
 {
 	margin-top: 8px;
+}
+
+.cms-content-tools #cms-content-treeview .cms-tree
+{
+	margin-top: 0px !important;
 }
 
 .cms-content-tools #cms-content-treeview .cms-content-toolbar
 {
 	padding: 5px 0px 5px 2px;
 	
-	margin-top: 0px !important;
 	margin-bottom: 0px !important;
 }
 
