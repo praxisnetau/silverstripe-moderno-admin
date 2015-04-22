@@ -1222,6 +1222,8 @@ fieldset.switch-states .switch .slide-button
 	box-shadow: none;
 	
 	background: #80888E;
+	
+	text-decoration: none;
 }
 
 .cms .ss-ui-button:hover
@@ -1237,7 +1239,9 @@ fieldset.switch-states .switch .slide-button
 	border: 0;
 
 	box-shadow: none;
-	
+
+	background: #0F8845 none;
+
 	text-decoration: none;
 }
 
@@ -2015,6 +2019,86 @@ fieldset.ss-gridfield
 .cms table.ss-gridfield-table tbody td.col-listChildrenLink .list-children-link:active
 {
 	text-decoration: none;
+}
+
+/* Better Buttons Styles:
+======================================================================================================================== */
+
+.cms .ui-widget.gridfield-better-buttons-delete
+{
+	border: 0 !important;
+
+	background: #B63051 none !important;
+}
+
+.cms .ui-widget.gridfield-better-buttons-delete:hover
+{
+	background: #D65071 none !important;
+}
+
+.cms .better-buttons-utils
+{
+	top: 6px !important;
+}
+
+.cms .better-buttons-utils .ss-ui-button
+{
+	min-height: 27px;
+
+	vertical-align: top;
+}
+
+.cms .better-buttons-utils .ui-button-text
+{
+ 	padding: 4px 14px 5px;
+}
+
+.cms .better-buttons-utils .ui-button-text img
+{
+	display: none;
+}
+
+.cms .gridfield-better-buttons-prev:nth-child(2),
+.cms .gridfield-better-buttons-next
+{
+	margin-right: 8px !important;
+}
+
+.cms .gridfield-better-buttons-prev:nth-child(1) .ui-button-text::before
+{
+	content: "\f0d9";
+
+	padding-right: 3px;
+
+	font-size: 12px;
+	font-family: 'FontAwesome';
+}
+
+.cms .gridfield-better-buttons-prev.disabled:nth-child(1) .ui-button-text::before
+{
+	padding-right: 0;
+}
+
+.cms .gridfield-better-buttons-prev:nth-child(2) .ui-button-text::after,
+.cms .gridfield-better-buttons-next .ui-button-text::after
+{
+	content: "\f0da";
+
+	padding-left: 3px;
+
+	font-size: 12px;
+	font-family: 'FontAwesome';
+}
+
+.cms .gridfield-better-buttons-prev.disabled:nth-child(2) .ui-button-text::after,
+.cms .gridfield-better-buttons-next.disabled .ui-button-text::after
+{
+	padding-left: 0;
+}
+
+.cms .gridfield-better-buttons-prevnext .ui-button-text
+{
+	line-height: 1.4 !important;
 }
 
 /* jQuery UI Styles:
