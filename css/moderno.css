@@ -2045,6 +2045,9 @@ fieldset.ss-gridfield
 {
 	min-height: 27px;
 
+	margin-left: 1px;
+	margin-right: 1px;
+
 	vertical-align: top;
 }
 
@@ -2056,12 +2059,6 @@ fieldset.ss-gridfield
 .cms .better-buttons-utils .ui-button-text img
 {
 	display: none;
-}
-
-.cms .gridfield-better-buttons-prev:nth-child(2),
-.cms .gridfield-better-buttons-next
-{
-	margin-right: 8px !important;
 }
 
 .cms .gridfield-better-buttons-prev:nth-child(1) .ui-button-text::before
