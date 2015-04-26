@@ -12,6 +12,7 @@ A [SilverStripe](http://silverstripe.org) module to give the CMS a more modern, 
 
 * Flat, modern, minimalist look and feel
 * Uses [Font Awesome](http://fontawesome.io) for most icons
+* Extension allowing CMS menu items to use Font Awesome icons by name
 * SVG SilverStripe logo
 * Reskinned TinyMCE editor
 * Uses the [Google Font 'Roboto'](https://www.google.com/fonts/specimen/Roboto) for UI elements
@@ -27,6 +28,35 @@ require: "praxisnetau/silverstripe-moderno-admin": "dev-master"
 #### Manual:
 
 To install this module manually, clone or download the repo, copy it to your document root ensuring the folder is called ```silverstripe-moderno-admin``` and finally run a ```/dev/build```.
+
+## Usage ##
+
+#### Font Awesome for CMS menu items:
+
+You can now use Font Awesome icons for your CMS menu items (e.g. ModelAdmin classes) without writing your own custom CSS.  To do this, [find the name of the Font Awesome icon](http://fortawesome.github.io/Font-Awesome/cheatsheet)
+you want to use for your class, and define the private static ```$awesome_icon``` on your class:
+
+```
+private static $awesome_icon = "fa-calendar";
+```
+
+You can also define icons for classes using the YAML config system, for example:
+
+```
+MyClassName:
+  awesome_icon: fa-calendar
+```
+
+The ```fa-``` prefix for icon names is optional, and may be safely omitted.
+
+It's a good idea to include both the regular ```$menu_icon``` and ```$awesome_icon``` attributes for compatibility, for example:
+
+```
+private static $menu_icon    = "mymodule/images/icons/calendar.png";
+private static $awesome_icon = "fa-calendar";
+```
+
+Remember to ```?flush``` after adding ```$awesome_icon``` to your class to update the CMS interface.
 
 ## Contribution ##
 

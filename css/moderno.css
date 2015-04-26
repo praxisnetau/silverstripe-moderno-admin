@@ -1479,35 +1479,9 @@ div.TreeDropdownField .treedropdownfield-toggle-panel-link
 	background: none !important;
 }
 
-.icon.icon-16.icon-cmspagescontroller:before
-{
-	content: "\f0e8";
-}
-
-.icon.icon-16.icon-assetadmin:before
-{
-	content: "\f03e";
-}
-
-.icon.icon-16.icon-reportadmin:before
-{
-	content: "\f080";
-}
-
-.icon.icon-16.icon-securityadmin:before,
 div.CMSProfileController .cms-content-header .cms-content-header-info .section-icon::before
 {
 	content: "\f007";
-}
-
-.icon.icon-16.icon-cmssettingscontroller:before
-{
-	content: "\f013";
-}
-
-.icon.icon-16.icon-help:before
-{
-	content: "\f05a";
 }
 
 /* Message Styles:

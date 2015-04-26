@@ -2,3 +2,20 @@ LeftAndMain:
   extra_requirements_css:
     - silverstripe-moderno-admin/css/moderno.min.css
     - silverstripe-moderno-admin/css/moderno-editor.min.css
+  extensions:
+    - AwesomeIconExtension
+
+CMSPagesController:
+  awesome_icon: sitemap
+
+AssetAdmin:
+  awesome_icon: picture-o
+
+ReportAdmin:
+  awesome_icon: bar-chart
+
+SecurityAdmin:
+  awesome_icon: user
+
+CMSSettingsController:
+  awesome_icon: cog
