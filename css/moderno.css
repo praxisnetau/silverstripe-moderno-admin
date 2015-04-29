@@ -195,7 +195,8 @@ body, html, .ui-widget, .ss-ui-button, .ui-widget button, .ui-widget-content, .u
 /* Panel Styles:
 ======================================================================================================================== */
 
-.cms .cms-panel-padded
+.cms .cms-panel-padded,
+.ui-tabs .ui-tabs-panel.cms-panel-padded
 {
 	padding: 15px;	
 }
@@ -447,6 +448,13 @@ body, html, .ui-widget, .ss-ui-button, .ui-widget button, .ui-widget-content, .u
 	vertical-align: middle;
 	
 	font-weight: 400 !important;
+}
+
+.cms-content-tools .field .description
+{
+	font-size: 11px;
+	
+	padding-top: 2px;
 }
 
 .cms-content-tools h4
@@ -1022,6 +1030,16 @@ fieldset.switch-states .switch .slide-button
 .fieldgroup .fieldgroup-field label
 {
 	vertical-align: middle;
+}
+
+.fieldgroup div.fieldgroup-field.nolabel
+{
+	margin-top: 5px !important;
+}
+
+.fieldgroup div.fieldgroup-field:first-child
+{
+	margin-top: 0px !important;	
 }
 
 .optionset li input,
@@ -1632,6 +1650,33 @@ div.cms_backlink a.backlink .ui-button-text
 fieldset.ss-gridfield
 {
 	margin: 15px 0;
+}
+
+div.ModelAdmin fieldset.ss-gridfield
+{
+	margin-top: 0;
+	
+	border-bottom: 0;
+}
+
+div.ModelAdmin .ss-gridfield .grid-csv-button,
+div.ModelAdmin .ss-gridfield .grid-print-button
+{
+	float: left;
+	
+	display: block;
+
+	margin-bottom: 15px;
+}
+
+.cms .ss-gridfield button
+{
+	font-size: 13px;
+}
+
+div.ModelAdmin .ss-gridfield button
+{
+	margin-right: 8px;
 }
 
 .cms table.ss-gridfield-table tr.title th
