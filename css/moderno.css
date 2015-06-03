@@ -2058,6 +2058,14 @@ div.ModelAdmin .ss-gridfield button
 	text-decoration: none;
 }
 
+.gridfield-sortablerows > label
+{
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 26px;
+	vertical-align: top;
+}
+
 /* Better Buttons Styles:
 ======================================================================================================================== */
 
