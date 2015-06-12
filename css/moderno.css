@@ -781,6 +781,11 @@ fieldset.switch-states .switch .slide-button
 	text-shadow: none;
 }
 
+.ss-toggle .ui-accordion-content .field
+{
+	padding-bottom: 12px;
+}
+
 .ss-toggle .ui-accordion-content .field:last-child
 {
 	margin-bottom: 10px !important;
@@ -1024,6 +1029,18 @@ fieldset.switch-states .switch .slide-button
 .ss-toggle .ui-accordion-header.ui-state-default
 {
 	background: #EFF2F4 none;
+}
+
+.ss-toggle .ui-accordion-content .field label
+{
+	float: left;
+}
+
+.ss-toggle .ui-accordion-content .field > label
+{
+	float: none;
+	
+	padding-top: 2px;
 }
 
 div.field.fieldgroup > div.middleColumn > div.fieldgroup-field
