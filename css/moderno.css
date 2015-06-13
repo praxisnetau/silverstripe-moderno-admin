@@ -1031,11 +1031,6 @@ fieldset.switch-states .switch .slide-button
 	background: #EFF2F4 none;
 }
 
-.ss-toggle .ui-accordion-content .field label
-{
-	float: left;
-}
-
 .ss-toggle .ui-accordion-content .field > label
 {
 	float: none;
