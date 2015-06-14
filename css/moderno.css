@@ -1001,6 +1001,19 @@ fieldset.switch-states .switch .slide-button
 	font-family: 'Roboto';
 }
 
+.fieldgroup-field .chzn-container-single .chzn-single
+{
+	height: 30px;
+	line-height: 30px;
+}
+
+.fieldgroup-field .chzn-container-active .chzn-single div b .field .chzn-container-single .chzn-single-with-drop div b,
+.fieldgroup-field .chzn-container-active .chzn-single-with-drop div b,
+.fieldgroup-field .chzn-container-single .chzn-single div b
+{
+	line-height: 30px;
+}
+
 .field.urlsegment .preview
 {
 	margin-right: 4px;
@@ -1029,6 +1042,8 @@ fieldset.switch-states .switch .slide-button
 .ss-toggle .ui-accordion-header.ui-state-default
 {
 	background: #EFF2F4 none;
+	
+	text-shadow: none;
 }
 
 .ss-toggle .ui-accordion-content .field > label
@@ -1036,6 +1051,16 @@ fieldset.switch-states .switch .slide-button
 	float: none;
 	
 	padding-top: 2px;
+}
+
+.ss-toggle .ui-accordion-content .field label.ss-ui-button
+{
+	float: left;
+}
+
+.ss-toggle .ui-accordion-content .fieldgroup .fieldgroup-field .fieldholder-small
+{
+	padding: 0;
 }
 
 div.field.fieldgroup > div.middleColumn > div.fieldgroup-field
@@ -1080,7 +1105,16 @@ div.fieldgroup > div.middleColumn > div.field
 
 .ss-uploadfield .middleColumn
 {
+	border-radius: 0 !important;
+
 	background: none #EFF2F4 !important;
+	
+	border: 1px solid #C4C6C8 !important;
+}
+
+.ss-uploadfield .ss-uploadfield-item .ss-uploadfield-item-info .ss-uploadfield-item-name
+{
+	line-height: 15px !important;
 }
 
 .fieldgroup.stacked .fieldgroup-field
@@ -1301,6 +1335,12 @@ div.Actions > input.ss-ui-button
 .cms-search-form div.Actions
 {
 	padding-top: 2px;
+}
+
+.cms-dialog-content div.Actions,
+.ss-uploadfield-edit-iframe div.Actions
+{
+	padding: 8px 0;
 }
 
 /* Tree Styles:
