@@ -786,11 +786,6 @@ fieldset.switch-states .switch .slide-button
 	padding-bottom: 12px;
 }
 
-.ss-toggle .ui-accordion-content .field:last-child
-{
-	margin-bottom: 10px !important;
-}
-
 .ss-toggle .ui-accordion-content .field.readonly:last-child
 {
 	margin-bottom: 10px !important;
