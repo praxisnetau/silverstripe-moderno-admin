@@ -1058,11 +1058,6 @@ fieldset.switch-states .switch .slide-button
 	padding: 0;
 }
 
-div.field.fieldgroup > div.middleColumn > div.fieldgroup-field
-{
-	padding: 0 8px 0 0;
-}
-
 div.fieldgroup > div.middleColumn > div.field
 {
 	margin: 0;
