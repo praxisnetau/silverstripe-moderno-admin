@@ -1346,9 +1346,20 @@ div.Actions > input.ss-ui-button
 	color: #555 !important;
 }
 
+.cms .jstree li.disabled > a, .TreeDropdownField .treedropdownfield-panel .jstree li.disabled > a,
+.cms .jstree li.disabled > a:hover, .TreeDropdownField .treedropdownfield-panel .jstree li.disabled > a:hover
+{
+	color: #A0A8AE !important;
+}
+
 .jstree-apple .jstree-clicked
 {
 	background: rgba(0,0,0,0.1) none;
+}
+
+.cms .jstree li.disabled > a.jstree-clicked, .TreeDropdownField .treedropdownfield-panel .jstree li.disabled > a.jstree-clicked
+{
+	background: transparent none;
 }
 
 .jstree-apple .jstree-hovered,
