@@ -2119,6 +2119,27 @@ div.ModelAdmin .ss-gridfield button
 	vertical-align: top;
 }
 
+.ss-gridfield-orderable .ss-gridfield-item > .col-reorder
+{
+	width: 20px !important;
+}
+
+.ss-gridfield-orderable .col-reorder .handle
+{
+	color: #A4A7A8;
+
+	text-align: right;
+	line-height: 32px;
+
+	font-size: 14px;
+	font-family: FontAwesome;
+}
+
+.ss-gridfield-orderable .col-reorder .handle::before
+{
+	content: "\f0c9";
+}
+
 /* Better Buttons Styles:
 ======================================================================================================================== */
 
