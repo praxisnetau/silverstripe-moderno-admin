@@ -10,7 +10,7 @@
 /* Global Styles:
 ======================================================================================================================== */
 
-body, html, .ui-widget, .ss-ui-button, .ui-widget button, .ui-widget-content, .ui-widget input
+body, html, .ui-widget, .ss-ui-button, .ui-widget button, .ui-widget select, .ui-widget textarea, .ui-widget-content, .ui-widget input
 {
 	font-size: 13px;
 	font-family: "Roboto", Helvetica, Arial, sans-serif;
