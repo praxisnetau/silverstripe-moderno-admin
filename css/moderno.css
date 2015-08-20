@@ -1107,6 +1107,12 @@ div.fieldgroup > div.middleColumn > div.field
 	line-height: 15px !important;
 }
 
+.ss-uploadfield label.right
+{
+	margin-left: 0;
+	padding-top: 2px;
+}
+
 .fieldgroup.stacked .fieldgroup-field
 {	
 	margin-bottom: 10px;
