@@ -1077,6 +1077,27 @@ div.fieldgroup > div.middleColumn > div.field
 	margin-top: 0 !important;
 }
 
+.field.checkbox input,
+.field.checkbox label.right {
+	vertical-align: middle;
+}
+
+.cms-container .CMSMain.CMSPageSettingsController #Root_Settings.tab .fieldgroup .fieldgroup-field {
+	padding: 8px 0;
+}
+
+.fieldgroup .fieldgroup-field {
+	padding: 0 8px 0 0;
+}
+
+.fieldgroup .fieldgroup-field .fieldholder-small {
+	padding: 0;
+}
+
+.field .fieldgroup .fieldgroup-field.last {
+	padding-bottom: 0;
+}
+
 .cms-search-form .fieldgroup div.fieldgroup-field.nolabel
 {
 	margin-top: 5px !important;
