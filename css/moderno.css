@@ -504,7 +504,8 @@ body, html, .ui-widget, .ss-ui-button, .ui-widget button, .ui-widget select, .ui
 	background: #A0A8AE none;
 }
 
-.cms-content-batchactions .view-mode-batchactions-wrapper label
+.cms-content-batchactions .view-mode-batchactions-wrapper label,
+.cms-content-batchactions .view-mode-batchactions-wrapper span.view-mode-batchactions-label
 {
 	color: #FFF;
 	
