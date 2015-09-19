@@ -10,6 +10,7 @@ A [SilverStripe](http://silverstripe.org) module to give the CMS a more modern, 
 
 ## Features ##
 
+* **NEW:** resizable site tree!
 * Flat, modern, minimalist look and feel
 * Uses [Font Awesome](http://fontawesome.io) for most icons
 * Extension allowing CMS menu items to use Font Awesome icons by name
@@ -30,6 +31,11 @@ require: "praxisnetau/silverstripe-moderno-admin": "dev-master"
 To install this module manually, clone or download the repo, copy it to your document root ensuring the folder is called `silverstripe-moderno-admin` and finally run a `/dev/build`.
 
 ## Usage ##
+
+#### Resizable Site Tree:
+
+Moderno now includes a JavaScript enhancement for LeftAndMain which allows you to resize the site tree. Simply grab the right edge of the tree and drag to resize.
+The width is saved using a cookie and should be persisted between page refreshes and Ajax loads.
 
 #### Font Awesome for CMS menu items:
 

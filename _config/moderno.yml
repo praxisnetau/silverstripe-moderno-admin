@@ -1,4 +1,6 @@
 LeftAndMain:
+  extra_requirements_javascript:
+    - silverstripe-moderno-admin/javascript/moderno.js
   extra_requirements_css:
     - silverstripe-moderno-admin/css/moderno.min.css
     - silverstripe-moderno-admin/css/moderno-editor.min.css
