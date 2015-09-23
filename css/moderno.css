@@ -734,6 +734,11 @@ fieldset.switch-states .switch .slide-button
 	margin: 10px 0 0;
 }
 
+.cms-edit-form .message
+{
+	margin: 16px 16px 0;
+}
+
 .CMSPageHistoryController .ui-tabs-panel .message
 {
 	margin: 0 0 10px;
@@ -1133,6 +1138,11 @@ div.fieldgroup > div.middleColumn > div.field
 {
 	margin-left: 0;
 	padding-top: 2px;
+}
+
+div.field.upload div.message
+{
+	margin: 16px 0 0;
 }
 
 .fieldgroup.stacked .fieldgroup-field
@@ -2514,6 +2524,11 @@ div.ModelAdmin .ss-gridfield button
 .cms form.AssetAdmin
 {
 	padding: 15px;
+}
+
+.cms form.AssetAdmin .message
+{
+	margin: 0 0 16px;
 }
 
 .cms .AssetAdmin table.ss-gridfield-table td.col-StripThumbnail
