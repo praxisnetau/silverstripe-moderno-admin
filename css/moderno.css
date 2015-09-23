@@ -1814,8 +1814,6 @@ div.ModelAdmin .ss-gridfield .grid-print-button
 	float: left;
 	
 	display: block;
-
-	margin-bottom: 15px;
 }
 
 .cms .ss-gridfield button
@@ -2216,6 +2214,20 @@ div.ModelAdmin .ss-gridfield button
 .ss-gridfield-orderable .col-reorder .handle::before
 {
 	content: "\f0c9";
+}
+
+.cms table.ss-gridfield-table tr td.bottom-all .datagrid-pagination > button.action
+{
+	font-size: 11px;
+}
+
+.cms table.ss-gridfield-table tr td.bottom-all .datagrid-pagination > span.pagination-page-number > input.text
+{
+	border: 0;
+	height: 20px;
+	padding: 2px;
+	margin-left: 2px;
+	margin-right: 2px;
 }
 
 /* Better Buttons Styles:
