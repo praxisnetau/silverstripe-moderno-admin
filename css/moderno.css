@@ -1247,6 +1247,18 @@ div.field.upload div.message
 	display: none !important;
 }
 
+tr.ss-gridfield-item .ui-button .ui-icon
+{
+	display: block !important;
+}
+
+tr.ss-gridfield-item .ss-ui-button:hover,
+tr.ss-gridfield-item .ss-ui-button:focus,
+tr.ss-gridfield-item .ss-ui-button:active
+{
+	background: transparent none;
+}
+
 .cms .ss-ui-button.ss-ui-action-constructive,
 .field.urlsegment button.update
 {
