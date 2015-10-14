@@ -781,6 +781,11 @@ fieldset.switch-states .switch .slide-button
 	box-shadow: none;
 }
 
+.field input.timepicker
+{
+	margin-left: 5px;
+}
+
 .field label.left
 {
 	font-weight: 500;
