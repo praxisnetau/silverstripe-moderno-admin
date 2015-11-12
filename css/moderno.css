@@ -227,8 +227,12 @@ body, html, .ui-widget, .ss-ui-button, .ui-widget button, .ui-widget select, .ui
 {
 	color: #FFF;
 	
+	margin: 0;
+	
 	font-size: 0;
 	font-family: "FontAwesome";
+	
+	padding-right: 4px;
 }
 
 .cms-panel.cms-content-tools .cms-panel-toggle a span
@@ -239,6 +243,59 @@ body, html, .ui-widget, .ss-ui-button, .ui-widget button, .ui-widget select, .ui
 .cms-panel .cms-panel-toggle a span:before
 {
 	content: "\f0a8";
+	font-size: 16px;
+}
+
+.cms-menu .ss-ui-button.sticky-toggle
+{
+	width: 16px;
+
+	text-indent: 0;
+	
+	padding-left: 4px;
+	
+	background: transparent none;
+}
+
+.cms-menu.collapsed .ss-ui-button.sticky-toggle
+{
+	width: 16px;
+}
+
+.cms-menu .ss-ui-button.sticky-toggle:hover + .sticky-status-indicator
+{
+	padding: 3px 6px;
+}
+
+.cms-menu .ss-ui-button.sticky-toggle:hover,
+.cms-menu .ss-ui-button.sticky-toggle:focus,
+.cms-menu .ss-ui-button.sticky-toggle:active
+{
+	background: transparent none;
+}
+
+.cms-menu .ss-ui-button.sticky-toggle > span
+{
+	color: #BFC0C0;
+	
+	font-size: 0;
+	font-family: "FontAwesome";
+}
+
+.cms-menu .ss-ui-button.sticky-toggle > span:before
+{
+	content: "\f10c";
+	font-size: 16px;
+}
+
+.cms-menu .ss-ui-button.sticky-toggle.active
+{
+	background: transparent none;
+}
+
+.cms-menu .ss-ui-button.sticky-toggle.active > span:before
+{
+	content: "\f111";
 	font-size: 16px;
 }
 
@@ -345,6 +402,7 @@ body, html, .ui-widget, .ss-ui-button, .ui-widget button, .ui-widget select, .ui
 	text-indent: 0;
 	
 	font-size: 24px;
+	line-height: 24px;
 	
 	color: #444;
 }
@@ -1441,6 +1499,16 @@ div.ModelAdmin #Form_ImportForm #Form_ImportForm__CsvFile
 	color: #555 !important;
 }
 
+.cms .jstree li, .TreeDropdownField .treedropdownfield-panel .jstree li
+{
+	margin-left: 14px;
+}
+
+.TreeDropdownField .treedropdownfield-panel li.jstree-open > ul
+{
+	margin-left: 0;
+}
+
 .cms .jstree li.disabled > a, .TreeDropdownField .treedropdownfield-panel .jstree li.disabled > a,
 .cms .jstree li.disabled > a:hover, .TreeDropdownField .treedropdownfield-panel .jstree li.disabled > a:hover
 {
@@ -1473,6 +1541,19 @@ div.ModelAdmin #Form_ImportForm #Form_ImportForm__CsvFile
 	padding: 4px 6px 4px 4px;
 	
 	border-radius: 0;
+	
+	text-shadow: none;
+}
+
+.cms-tree.jstree .jstree-no-checkboxes li a
+{
+	padding-left: 4px;
+}
+
+.cms-tree.jstree .jstree-no-checkboxes li .jstree-hovered,
+.cms-tree.jstree .jstree-no-checkboxes li .jstree-clicked,
+.cms-tree.jstree .jstree-no-checkboxes li a:focus {
+	padding-left: 4px;
 }
 
 .jstree-apple .jstree-no-checkboxes a .jstree-icon
@@ -1484,6 +1565,8 @@ div.ModelAdmin #Form_ImportForm #Form_ImportForm__CsvFile
 	
 	text-align: center;
 	
+	display: inline-block;
+	
 	background: none transparent;
 }
 
@@ -1491,6 +1574,12 @@ div.ModelAdmin #Form_ImportForm #Form_ImportForm__CsvFile
 .jstree-hovered .jstree-checkbox
 {
 	color: #FFF !important;
+}
+
+.cms .jstree a > ins, .TreeDropdownField .treedropdownfield-panel .jstree a > ins
+{
+	width: 16px;
+	height: 16px;
 }
 
 .jstree-apple .jstree-no-checkboxes a .jstree-icon::before
@@ -1526,12 +1615,24 @@ div.ModelAdmin #Form_ImportForm #Form_ImportForm__CsvFile
 
 .jstree-apple .jstree-checked > a > .jstree-checkbox::before
 {
-	content: "\f046";
+	content: "\f046" !important;
 }
 
 .jstree-apple .jstree-unchecked > a > .jstree-checkbox::before
 {
-	content: "\f096";
+	content: "\f096" !important;
+}
+
+.cms .jstree a ins.jstree-checkbox::before,
+.TreeDropdownField .treedropdownfield-panel .jstree a ins.jstree-checkbox::before
+{
+	top: 1px;
+	left: 0;
+}
+
+.cms .jstree a > .jstree-icon, .TreeDropdownField .treedropdownfield-panel .jstree a > .jstree-icon
+{
+	margin-right: 3px;
 }
 
 .jstree-apple .jstree-unchecked > a > .jstree-checkbox,
@@ -1549,7 +1650,7 @@ div.ModelAdmin #Form_ImportForm #Form_ImportForm__CsvFile
 	font-size: 18px;
 	font-family: 'FontAwesome';
 	
-	text-align: center;
+	text-align: right;
 	
 	background: none transparent;
 }
@@ -1584,7 +1685,9 @@ div.TreeDropdownField .treedropdownfield-toggle-panel-link a
 {
 	border: 0;
 	
-	padding: 4px 6px 4px;
+	padding: 4px 6px 4px 0;
+	
+	text-shadow: none !important;
 }
 
 .tree-holder.jstree-apple li.Root strong, .cms-tree.jstree-apple li.Root strong
@@ -2169,7 +2272,9 @@ div.ModelAdmin .ss-gridfield button
 	margin-bottom: 15px;
 }
 
-.cms .ss-gridfield > div.ss-gridfield-buttonrow-after .action
+.cms .ss-gridfield > div.ss-gridfield-buttonrow-after .action,
+.cms .ss-gridfield > p.grid-print-button > button,
+.cms .ss-gridfield > p.grid-csv-button > button
 {
 	font-size: 13px;
 
