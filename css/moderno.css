@@ -218,6 +218,11 @@ body, html, .ui-widget, .ss-ui-button, .ui-widget button, .ui-widget select, .ui
 	width: 10px;
 }
 
+#cms-content-tools-CMSMain .cms-tree.jstree span.badge
+{
+	box-shadow: none !important;
+}
+
 #Form_ListViewForm_Page
 {
 	border-bottom: 0;
@@ -1531,6 +1536,39 @@ div.ModelAdmin #Form_ImportForm #Form_ImportForm__CsvFile
 	color: #FFF !important;
 
 	background: #139FDA none;
+}
+
+.jstree .status-modified > .jstree-hovered,
+.jstree .status-addedtodraft > .jstree-hovered
+{
+	background-color: #f46b00 !important;
+}
+
+.jstree .status-archived > .jstree-hovered,
+.jstree .status-deletedonlive > .jstree-hovered,
+.jstree .status-removedfromdraft > .jstree-hovered
+{
+	background-color: #455b6c !important;
+}
+
+.jstree .status-workflow-approval > .jstree-hovered
+{
+	background-color: #0070b4 !important;
+}
+
+.jstree .jstree-hovered span.badge
+{
+	color: #fff !important;
+}
+
+.cms-tree.jstree span.badge
+{
+	background: transparent none !important;
+}
+
+.jstree .jstree-clicked
+{
+	background-color: rgba(0, 0, 0, 0.1) !important;
 }
 
 .tree-holder.jstree-apple a,
