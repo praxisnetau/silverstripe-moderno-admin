@@ -1520,7 +1520,12 @@ div.ModelAdmin #Form_ImportForm #Form_ImportForm__CsvFile
 	color: #A0A8AE !important;
 }
 
-.jstree-apple .jstree-clicked
+.jstree-apple .jstree-clicked,
+.jstree .status-modified > .jstree-clicked,
+.jstree .status-addedtodraft > .jstree-clicked,
+.jstree .status-archived > .jstree-clicked,
+.jstree .status-deletedonlive > .jstree-clicked,
+.jstree .status-removedfromdraft > .jstree-clicked
 {
 	background: rgba(0,0,0,0.1) none;
 }
@@ -1564,11 +1569,6 @@ div.ModelAdmin #Form_ImportForm #Form_ImportForm__CsvFile
 .cms-tree.jstree span.badge
 {
 	background: transparent none !important;
-}
-
-.jstree .jstree-clicked
-{
-	background-color: rgba(0, 0, 0, 0.1) !important;
 }
 
 .tree-holder.jstree-apple a,
