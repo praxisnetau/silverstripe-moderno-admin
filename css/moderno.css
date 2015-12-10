@@ -1591,7 +1591,7 @@ div.ModelAdmin #Form_ImportForm #Form_ImportForm__CsvFile
 .cms-tree.jstree .jstree-no-checkboxes li .jstree-hovered,
 .cms-tree.jstree .jstree-no-checkboxes li .jstree-clicked,
 .cms-tree.jstree .jstree-no-checkboxes li a:focus {
-	padding-left: 4px;
+	padding-left: 4px !important;
 }
 
 .jstree-apple .jstree-no-checkboxes a .jstree-icon
