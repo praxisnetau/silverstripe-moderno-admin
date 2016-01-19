@@ -844,6 +844,14 @@ fieldset.switch-states .switch .slide-button
 	box-shadow: none;
 }
 
+.ui-dialog .field input.text,
+.ui-dialog .field textarea,
+.ui-dialog .field select,
+.ui-dialog .field .TreeDropdownField
+{
+	max-width: 100%;
+}
+
 .field input.timepicker
 {
 	margin-left: 5px;
@@ -1583,14 +1591,11 @@ div.ModelAdmin #Form_ImportForm #Form_ImportForm__CsvFile
 	text-shadow: none;
 }
 
-.cms-tree.jstree .jstree-no-checkboxes li a
-{
-	padding-left: 4px;
-}
-
+.cms-tree.jstree .jstree-no-checkboxes li a,
+.cms-tree.jstree .jstree-no-checkboxes li a:focus,
 .cms-tree.jstree .jstree-no-checkboxes li .jstree-hovered,
-.cms-tree.jstree .jstree-no-checkboxes li .jstree-clicked,
-.cms-tree.jstree .jstree-no-checkboxes li a:focus {
+.cms-tree.jstree .jstree-no-checkboxes li .jstree-clicked
+{
 	padding-left: 4px !important;
 }
 
