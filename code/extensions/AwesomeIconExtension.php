@@ -69,9 +69,10 @@ class AwesomeIconExtension extends LeftAndMainExtension
     /**
      * Answers the unicode value for the icon with the given name.
      *
+     * @param string $name
      * @return string
      */
-    public function getIconUnicode($name)
+    protected function getIconUnicode($name)
     {
         $icons = Config::inst()->get(__CLASS__, 'icons');
         
@@ -85,10 +86,11 @@ class AwesomeIconExtension extends LeftAndMainExtension
     /**
      * Ensures the icon class name has the correct prefix.
      *
+     * @param string $name
      * @return string
      */
-    protected function prefix($icon)
+    protected function prefix($name)
     {
-        return (substr($icon, 0, 3) != 'fa-') ? 'fa-' . $icon : $icon;
+        return (substr($name, 0, 3) != 'fa-') ? 'fa-' . $name : $name;
     }
 }
