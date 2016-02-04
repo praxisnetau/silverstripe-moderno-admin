@@ -1124,6 +1124,8 @@ fieldset.switch-states .switch .slide-button
 
 .ss-toggle .ui-accordion-content .field > label
 {
+  width: auto;
+  
   float: none;
   
   padding-top: 2px;
