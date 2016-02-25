@@ -2,7 +2,7 @@
 	"name": "praxisnetau/silverstripe-moderno-admin",
 	"description": "A SilverStripe module to give the CMS a more modern, flat appearance.",
 	"type": "silverstripe-module",
-	"homepage": "https://github.com/PraxisNetAu/silverstripe-moderno-admin",
+	"homepage": "https://github.com/praxisnetau/silverstripe-moderno-admin",
 	"keywords": ["silverstripe", "moderno", "admin", "cms", "flat", "theme", "skin"],
 	"license": "BSD-3-Clause",
 	"authors": [

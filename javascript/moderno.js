@@ -39,4 +39,16 @@
         
     });
     
+    // Create Animated Icons for Buttons:
+    
+    $("#ActionMenus_MoreOptions > button").entwine({
+        
+        onadd: function() {
+            
+            this.prepend('<i class="fa fa-refresh fa-spin" style="display: none"></i>');
+            
+        }
+        
+    });
+    
 })(jQuery);

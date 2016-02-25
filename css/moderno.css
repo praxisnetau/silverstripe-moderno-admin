@@ -843,12 +843,25 @@ fieldset.switch-states .switch .slide-button
   box-shadow: none;
 }
 
+.ui-dialog,
+.ui-dialog .cms-dialog-content
+{
+  background: #E6EAED none;
+}
+
 .ui-dialog .field input.text,
 .ui-dialog .field textarea,
 .ui-dialog .field select,
 .ui-dialog .field .TreeDropdownField
 {
   max-width: 100%;
+}
+
+.ui-dialog .ui-dialog-content
+{
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
 }
 
 .field input.timepicker
@@ -926,7 +939,8 @@ fieldset.switch-states .switch .slide-button
   border-bottom-right-radius: 0px;
 }
 
-.field .chzn-container-multi .chzn-choices .search-choice
+.field .chzn-container-multi .chzn-choices .search-choice,
+.field .select2-container .select2-selection .select2-selection__choice
 {
   box-shadow: none;
 
@@ -934,13 +948,23 @@ fieldset.switch-states .switch .slide-button
   
   background: #ECEFF1 none;
   
-  padding: 4px 20px 4px 5px;
+  padding: 4px 20px 4px 5px !important;
   
-  margin: 3px 0 3px 3px;
+  margin: 3px 0 3px 3px !important;
+  
+  height: 16px;
+  line-height: 16px;
   
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
+  
+  font-family: "Roboto",Helvetica,Arial,sans-serif;
+}
+
+.field .select2-container .select2-selection .select2-selection__choice
+{
+  margin-top: 0px !important;
 }
 
 .field .chzn-container-multi .chzn-choices .search-choice .search-choice-close
@@ -950,21 +974,48 @@ fieldset.switch-states .switch .slide-button
   color: #757676;
 
   font-size: 14px;
+  font-weight: 400;
   font-family: 'FontAwesome';
+  
+  text-decoration: none;
 
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 
-.field .chzn-container-multi .chzn-choices .search-choice .search-choice-close::before
+.field .select2-container .select2-selection .select2-selection__choice .select2-selection__choice__remove
 {
-  content: "\f00d";
+  top: 3px;
+  font-size: 0;
+  font-weight: 400;
+  font-family: 'FontAwesome';
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+  text-indent: 0;
+  text-align: center;
+  background: transparent none !important;
 }
 
-.field .chzn-container-multi .chzn-choices .search-choice .search-choice-close:hover
+.field .chzn-container-multi .chzn-choices .search-choice .search-choice-close::before,
+.field .select2-container .select2-selection .select2-selection__choice .select2-selection__choice__remove::before
+{
+  color: #757676;
+  content: "\f00d";
+  font-size: 14px;
+}
+
+.field .chzn-container-multi .chzn-choices .search-choice .search-choice-close:hover::before,
+.field .select2-container .select2-selection .select2-selection__choice .select2-selection__choice__remove:hover::before
 {
   color: #555656;
-  
-  text-decoration: none;
+}
+
+.field .select2-container li.select2-search--inline {
+  margin-left: 4px;
+}
+
+.field .select2-container--default .select2-search--inline .select2-search__field {
+  line-height: 22px;
+  margin-top: 2px;
+  margin-bottom: 5px;
 }
 
 .field .chzn-container-single .chzn-single div b,
@@ -1060,11 +1111,52 @@ fieldset.switch-states .switch .slide-button
   background: #139FDA none;
 }
 
-.field .chzn-container-multi .chzn-choices
+.field .chzn-container-multi .chzn-choices,
+.field .select2-selection
 {
   border-color: #C4C6C8;
 
   background-image: none;
+}
+
+span.select2-dropdown
+{
+  border-color: #C4C6C8;
+}
+
+.select2-container--open span.select2-dropdown--above
+{
+  margin-top: 1px !important;
+}
+
+.field .select2-container--default .select2-selection--multiple
+{
+  border: 1px solid #c4c6c8 !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.field .select2-container--default .select2-selection--multiple > ul
+{
+  padding-top: 3px !important;
+}
+
+.field .select2-container--default.select2-container--focus .select2-selection--multiple
+{
+  border: 1px solid #c4c6c8;
+}
+
+.select2-container--default li.select2-results__option[aria-selected="true"]
+{
+  background-color: #fff;
+}
+
+li.select2-results__option--highlighted
+{
+  background-color: #139FDA !important;
+  background-image: none !important;
 }
 
 .field .chzn-container-active .chzn-choices
@@ -1088,6 +1180,11 @@ fieldset.switch-states .switch .slide-button
 .fieldgroup-field .chzn-container-single .chzn-single div b
 {
   line-height: 30px;
+}
+
+.cms-edit-form input[name=Title]
+{
+  margin-right: 8px;
 }
 
 .field.urlsegment .preview
@@ -1457,7 +1554,32 @@ div.Actions > input.ss-ui-button
 .cms-dialog-content div.Actions,
 .ss-uploadfield-edit-iframe div.Actions
 {
-  padding: 8px 0;
+  padding: 8px;
+}
+
+.cms-dialog-content div.Actions > :last-child,
+.ss-uploadfield-edit-iframe div.Actions > :last-child
+{
+  margin-right: 8px;
+}
+
+.cms .button-no-style button.loading,
+.cms .ss-ui-action-tabset.action-menus.ss-tabset .ui-tabs-panel button.loading
+{
+  background-image: none;
+}
+
+.cms .button-no-style button.loading .ui-button-text,
+.cms .ss-ui-action-tabset.action-menus.ss-tabset .ui-tabs-panel button.loading .ui-button-text
+{
+  padding-left: 0;
+}
+
+.cms .button-no-style button.loading i.fa,
+.cms .ss-ui-action-tabset.action-menus.ss-tabset .ui-tabs-panel button.loading i.fa
+{
+  display: inline-block !important;
+  margin-right: 2px;
 }
 
 /* Model Admin Styles:
@@ -1729,7 +1851,7 @@ div.TreeDropdownField .treedropdownfield-toggle-panel-link a
 {
   border: 0;
   
-  padding: 4px 6px 4px 0;
+  padding: 4px;
   
   text-shadow: none !important;
 }
@@ -1845,6 +1967,31 @@ div.CMSProfileController .cms-content-header .cms-content-header-info .section-i
   border-radius: 0;
 }
 
+.notice-item
+{
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
+.notice-item-close
+{
+  font-size: 0;
+  text-indent: 0;
+  width: 14px;
+  height: 14px;
+  background: none transparent;
+}
+
+.notice-item-close::before
+{
+  color: #fff;
+  content: "\f00d";
+  font-size: 14px;
+  font-weight: normal;
+  font-family: 'FontAwesome';
+}
+
 /* Content Styles:
 ===================================================================================================================== */
 
@@ -1853,7 +2000,8 @@ div.CMSProfileController .cms-content-header .cms-content-header-info .section-i
   padding-left: 10px;
 }
 
-.cms-content-header h2
+.cms-content-header h2,
+.cms-content-header h3
 {
   color: #555;
 
@@ -1861,6 +2009,11 @@ div.CMSProfileController .cms-content-header .cms-content-header-info .section-i
   font-weight: 500;
   
   margin-bottom: 0;
+}
+
+.cms-content-header h3
+{
+  padding: 2px 6px !important;
 }
 
 .cms-content-header h2 *
