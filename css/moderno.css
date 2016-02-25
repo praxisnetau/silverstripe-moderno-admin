@@ -900,6 +900,19 @@ fieldset.switch-states .switch .slide-button
   padding-bottom: 8px;
 }
 
+.htmleditorfield-dialog .htmleditorfield-from-web button.add-url
+{
+  background: #80888E none;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.htmleditorfield-dialog .htmleditorfield-from-web button.add-url .ui-button-text
+{
+  margin-left: 0;
+  padding-top: 6px;
+}
+
 .chzn-container-single .chzn-search
 {
   padding: 2px 4px;
