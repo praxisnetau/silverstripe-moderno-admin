@@ -7,6 +7,11 @@ LeftAndMain:
     - silverstripe-moderno-admin/css/font-awesome.min.css
   extensions:
     - AwesomeIconExtension
+    - ModernoAdminExtension
+
+SiteConfig:
+  extensions:
+    - ModernoConfigExtension
 
 CMSPagesController:
   awesome_icon: sitemap
