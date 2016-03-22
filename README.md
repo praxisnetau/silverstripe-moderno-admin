@@ -72,9 +72,11 @@ This module started as a simple CSS file of tweaks that quickly got way out of h
 
 ## Screenshots ##
 
-![Moderno Admin](http://i.imgur.com/kAZBmCp.png "Moderno Admin")
+![Moderno Admin](http://i.imgur.com/kpJhZ39.png "Moderno Admin")
 
-![Moderno Admin](http://i.imgur.com/7lsm1zR.png "Moderno Admin")
+![Moderno Admin](http://i.imgur.com/lPbhRBj.png "Moderno Admin")
+
+![Moderno Admin](http://i.imgur.com/WGeGbEP.png "Moderno Admin")
 
 ## To Do ##
 
