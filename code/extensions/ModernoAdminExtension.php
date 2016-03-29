@@ -10,7 +10,7 @@ class ModernoAdminExtension extends LeftAndMainExtension
      */
     public function init()
     {
-        if ($SiteConfig = SiteConfig::current_site_config()) {
+        if (class_exists("SiteConfig") && $SiteConfig = SiteConfig::current_site_config()) {
             Requirements::customCSS($SiteConfig->renderWith('ModernoAdminCustomCSS'));
         }
     }
