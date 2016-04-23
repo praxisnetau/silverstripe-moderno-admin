@@ -2906,7 +2906,7 @@ div.ModelAdmin .ss-gridfield button
 
 .cms .better-buttons-utils
 {
-  top: 6px !important;
+  top: 12px !important;
 }
 
 .cms .better-buttons-utils .ss-ui-button
@@ -2927,6 +2927,14 @@ div.ModelAdmin .ss-gridfield button
 .cms .better-buttons-utils .ui-button-text img
 {
   display: none;
+}
+
+.cms .better-buttons-frontend-links {
+  margin-right: 16px !important;
+}
+
+.cms .ui-widget.gridfield-better-buttons-delete {
+  margin-right: 0px;
 }
 
 .cms .gridfield-better-buttons-prev:nth-child(1) .ui-button-text::before
