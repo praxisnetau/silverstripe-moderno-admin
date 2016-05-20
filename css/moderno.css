@@ -739,6 +739,15 @@ fieldset.switch-states .switch .slide-button
   border-bottom: 0;
 }
 
+.cms-content-fields .ui-tabs-nav li {
+  margin-left: 0px;
+}
+
+.cms-content-fields .ui-tabs-nav li.first a {
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
 .ui-tabs .ui-tabs-nav li
 {
   margin-right: -1px;
