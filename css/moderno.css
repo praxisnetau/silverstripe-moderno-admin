@@ -1444,10 +1444,6 @@ div.fieldgroup > div.middleColumn > div.field
   color: #777;
 }
 
-.cms-container .CMSMain.CMSPageSettingsController #Root_Settings.tab .fieldgroup .fieldgroup-field {
-  padding: 8px 0;
-}
-
 .fieldgroup .fieldgroup-field {
   padding: 0 8px 0 0;
 }
@@ -1474,6 +1470,11 @@ div.fieldgroup > div.middleColumn > div.field
 .optionset li label
 {
   vertical-align: middle;
+}
+
+.optionset li label
+{
+  padding-left: 3px;
 }
 
 .ss-uploadfield .middleColumn
