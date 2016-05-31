@@ -980,6 +980,7 @@ fieldset.switch-states .switch .slide-button
 .field textarea,
 .field .TreeDropdownField
 {
+  color: #40484E;
   background: #FFF;
   
   border: 1px solid #c4c6c8;
@@ -987,6 +988,8 @@ fieldset.switch-states .switch .slide-button
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
+  
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
 }
 
 .field input.text:focus,
@@ -1477,6 +1480,47 @@ div.fieldgroup > div.middleColumn > div.field
   padding-left: 3px;
 }
 
+body.ss-uploadfield-edit-iframe
+{
+  overflow: auto;
+}
+
+body.cms-dialog
+{
+  background: none transparent;
+}
+
+.composite.ss-assetuploadfield .details fieldset
+{
+  padding: 0px !important;
+  background-color: #E6EAED !important;
+}
+
+body.cms.ss-uploadfield-edit-iframe
+{
+  padding: 0px !important;
+  background-color: #EFF2F4 !important;
+}
+
+body.cms.ss-uploadfield-edit-iframe span.readonly,
+.composite.ss-assetuploadfield .details fieldset span.readonly
+{
+  font-style: normal !important;
+  text-shadow: none !important;
+  color: #40484E !important;
+}
+
+.htmleditorfield-dialog .details .field
+{
+  box-shadow: none !important;
+}
+
+.ss-assetuploadfield .ss-uploadfield-files .ss-uploadfield-item
+{
+  border-radius: 0 !important;
+  border: 0 !important;
+}
+
 .ss-uploadfield .middleColumn
 {
   border-radius: 0 !important;
@@ -1486,9 +1530,59 @@ div.fieldgroup > div.middleColumn > div.field
   border: 1px solid #C4C6C8 !important;
 }
 
+.htmleditorfield-dialog .ss-insert-media, .htmleditorfield-dialog .Actions, .htmleditorfield-dialog .ss-insert-link
+{
+  padding: 15px !important;
+}
+
 .ss-uploadfield .ss-uploadfield-item .ss-uploadfield-item-info .ss-uploadfield-item-name
 {
   line-height: 15px !important;
+}
+
+.ss-uploadfield .ss-uploadfield-item .ss-uploadfield-item-preview
+{
+  height: 55px !important;
+  line-height: 55px !important;
+}
+
+.ss-uploadfield .ss-uploadfield-files .ss-uploadfield-item-editform iframe
+{
+  border-top: 0 !important;
+  margin-top: 0px !important;
+  padding-top: 0px !important;
+}
+
+.ss-uploadfield .ss-uploadfield-item .ss-uploadfield-item-info .ss-uploadfield-item-name
+{
+  height: 25px !important;
+}
+
+.ss-uploadfield .ss-uploadfield-files .ss-uploadfield-item-actions
+{
+  margin: 0 !important;
+}
+
+.ss-uploadfield .ss-uploadfield-files .ss-uploadfield-item-actions > button
+{
+  margin-bottom: 0;
+}
+
+.ss-uploadfield .ss-uploadfield-files .ss-uploadfield-item-editform.opened
+{
+  margin-top: 12px !important;
+  padding-top: 12px !important;
+  border-top: 1px solid #d4d6d8;
+}
+
+.ss-uploadfield .ss-uploadfield-files .ss-uploadfield-item-editform iframe
+{
+  opacity: 0;
+}
+
+.ss-uploadfield .ss-uploadfield-files .ss-uploadfield-item-editform.opened iframe
+{
+  opacity: 1;
 }
 
 .ss-uploadfield label.right
@@ -1749,16 +1843,20 @@ div.Actions > input.ss-ui-button
   padding-top: 2px;
 }
 
-.cms-dialog-content div.Actions,
+.cms-dialog-content div.Actions
+{
+  padding: 0;
+}
+
 .ss-uploadfield-edit-iframe div.Actions
 {
-  padding: 8px;
+  padding: 8px 0 0;
 }
 
 .cms-dialog-content div.Actions > :last-child,
 .ss-uploadfield-edit-iframe div.Actions > :last-child
 {
-  margin-right: 8px;
+  margin-right: 0;
 }
 
 .cms .button-no-style button.loading,
@@ -2263,6 +2361,11 @@ div.CMSProfileController .cms-content-header .cms-content-header-info .section-i
   margin-left: 20px;
 }
 
+.cms-content-header .cms-content-header-info .cms_backlink .ss-ui-button
+{
+  padding-top: 2px;
+}
+
 .breadcrumbs-wrapper
 {
   padding: 0 0 0 5px;
@@ -2328,6 +2431,11 @@ div.CMSProfileController .cms-content-header .cms-content-header-info .section-i
 .cms-content-header h3
 {
   padding: 2px 6px !important;
+}
+
+.htmleditorfield-dialog .cms-content-header h3
+{
+  padding: 12px 16px !important;
 }
 
 .cms-content-header h2 *
@@ -3190,14 +3298,50 @@ div.ModelAdmin .ss-gridfield button
 {
   box-shadow: none;
   
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   
-  border-bottom: 1px solid #C4C6C8;
+  border-bottom: 1px solid #d4d6d8;
 }
 
 .cms-file-info .cms-file-info-preview img
 {
   max-width: 162px;
+}
+
+form.small .cms-file-info-data
+{
+  max-width: 500px;
+  width: 75%;
+}
+
+form.small .cms-file-info-data .field
+{
+  padding-bottom: 4px;
+}
+
+form.small .cms-file-info-data > .field:last-child
+{
+  padding-bottom: 0;
+}
+
+form.small .cms-file-info-data .field .middleColumn
+{
+  margin-left: 104px;
+}
+
+form.small .cms-file-info-data span.btn-icon-information::before
+{
+  content: "\f05a";
+  font-weight: 400;
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-size: 13px;
+  color: #4F5861;
+}
+
+form.small .cms-file-info-preview img
+{
+  max-width: 108px;
 }
 
 .backlink
