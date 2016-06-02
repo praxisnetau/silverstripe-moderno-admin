@@ -63,9 +63,12 @@ body, html, .ui-widget, .ss-ui-button, .ui-widget button, .ui-widget select, .ui
   
   font-size: 13px;
   font-weight: 500;
-  line-height: 24px;
+  line-height: 16px;
   
   margin-left: 32px;
+  
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .cms-logo-header
