@@ -1558,7 +1558,7 @@ body.cms.ss-uploadfield-edit-iframe span.readonly,
 
 .ss-uploadfield .ss-uploadfield-item .ss-uploadfield-item-info .ss-uploadfield-item-name
 {
-  height: 25px !important;
+  height: 20px !important;
 }
 
 .ss-uploadfield .ss-uploadfield-files .ss-uploadfield-item-actions
@@ -1568,7 +1568,7 @@ body.cms.ss-uploadfield-edit-iframe span.readonly,
 
 .ss-uploadfield .ss-uploadfield-files .ss-uploadfield-item-actions > button
 {
-  margin-bottom: 0;
+  margin: 5px 8px 0 0;
 }
 
 .ss-uploadfield .ss-uploadfield-files .ss-uploadfield-item-editform.opened
@@ -1849,6 +1849,19 @@ div.Actions > input.ss-ui-button
 .cms-dialog-content div.Actions
 {
   padding: 0;
+}
+
+.ss-uploadfield-edit-iframe form.small div.field
+{
+  padding-right: 10px;
+}
+
+.ss-uploadfield-edit-iframe form.small .field input.text,
+.ss-uploadfield-edit-iframe form.small .field textarea,
+.ss-uploadfield-edit-iframe form.small .field select,
+.ss-uploadfield-edit-iframe form.small .field .TreeDropdownField
+{
+  width: 100%;
 }
 
 .ss-uploadfield-edit-iframe div.Actions
