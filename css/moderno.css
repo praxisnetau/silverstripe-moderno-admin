@@ -584,9 +584,8 @@ body, html, .ui-widget, .ss-ui-button, .ui-widget button, .ui-widget select, .ui
 
 .cms-content-tools h4
 {
-  font-size: 13px;
-  
-  font-weight: 500;
+  font-size: 13px !important;
+  font-weight: 500 !important;
 }
 
 .cms-content-tools .ui-button .ui-icon
@@ -900,6 +899,8 @@ fieldset.switch-states .switch .slide-button
   content: "\f040";
 }
 
+.cms_backlink [class^="font-icon-"]::before,
+.cms_backlink [class*="font-icon-"]::before,
 .cms-actions-buttons-row [class^="font-icon-"]::before,
 .cms-actions-buttons-row [class*="font-icon-"]::before,
 .cms .AssetAdmin .cms-content-toolbar [class^="font-icon-"]::before,
@@ -931,6 +932,25 @@ fieldset.switch-states .switch .slide-button
 .font-icon-sync::before
 {
   content: "\f021";
+}
+
+.font-icon-left-open-big::before
+{
+  content: "\f104";
+}
+
+.cms-content-header .cms-content-header-info .cms_backlink .ss-ui-button
+{
+  margin: 0;
+  padding: 0;
+  width: 15px;
+  line-height: 30px;
+}
+
+.cms-content-header .cms-content-header-info .cms_backlink .ss-ui-button::before
+{
+  font-size: 30px;
+  line-height: 30px;
 }
 
 .ui-tabs .ui-tabs-panel
@@ -1006,6 +1026,45 @@ fieldset.switch-states .switch .slide-button
 .field .description
 {
   color: #777;
+}
+
+.field.tabset,
+.field.CompositeField
+{
+  margin-top: 0;
+  margin-bottom: 0;
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.parentTypeSelector .field:last-child
+{
+  border-bottom: 1px solid #d4d6d8;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+}
+
+.SelectionGroup li.selected > div.selectiongroup_item
+{
+  margin-left: 20px !important;
+}
+
+.cms-add-form .SelectionGroup li.selected > div.selectiongroup_item,
+.cms-add-form .SelectionGroup li.selected > div.selectiongroup_item > .field
+{
+  margin-bottom: 0;
+}
+
+.field.fieldgroup
+{
+  margin: 10px 0;
+  padding: 0 0 10px;
+  border-bottom: 1px solid #d4d6d8;
+}
+
+.field .middleColumn.fieldgroup
+{
+  padding: 8px 0;
 }
 
 .ui-dialog,
@@ -1472,6 +1531,11 @@ div.fieldgroup > div.middleColumn > div.field
   margin-top: 0px !important;
 }
 
+.field.optionset
+{
+  margin-bottom: 0;
+}
+
 .optionset li input,
 .optionset li label
 {
@@ -1604,6 +1668,13 @@ div.field.upload div.message
   margin-bottom: 10px;
 }
 
+.cms-content-filters .field.fieldgroup
+{
+  margin-top: 0;
+  padding: 0 16px;
+  border-bottom: 0;
+}
+
 div.cms-content-filters .fieldgroup.stacked .fieldgroup-field
 {
   margin-bottom: 0;
@@ -1611,7 +1682,18 @@ div.cms-content-filters .fieldgroup.stacked .fieldgroup-field
 
 .SelectionGroup li
 {
-  padding: 5px 0;
+  padding: 5px 0 5px 8px;
+}
+
+.SelectionGroup li input.selector
+{
+  margin: 2px 6px 0 0;
+  width: auto !important;
+}
+
+form.stacked .field.SelectionGroup label
+{
+  padding-bottom: 0;
 }
 
 .cms .cms-content-fields
@@ -2377,11 +2459,6 @@ div.CMSProfileController .cms-content-header .cms-content-header-info .section-i
   margin-left: 20px;
 }
 
-.cms-content-header .cms-content-header-info .cms_backlink .ss-ui-button
-{
-  padding-top: 2px;
-}
-
 .breadcrumbs-wrapper
 {
   padding: 0 0 0 5px;
@@ -2513,8 +2590,6 @@ div.CMSProfileController .cms-content-header .cms-content-header-info .section-i
 div.cms_backlink
 {
   margin-right: 5px;
-  padding-top: 5px;
-  vertical-align: top !important;
 }
 
 div.cms_backlink a.backlink .ui-button-text
@@ -3324,6 +3399,11 @@ div.ModelAdmin .ss-gridfield button
   max-width: 162px;
 }
 
+.cms-file-info .cms-file-info-data .field.CompositeField
+{
+  padding-bottom: 0;
+}
+
 form.small .cms-file-info-data
 {
   max-width: 500px;
@@ -3486,9 +3566,20 @@ div.SecurityAdmin #Form_EditForm_Roles
   padding-bottom: 10px;
 }
 
-#ViewerGroups, #EditorGroups, #CreateTopLevelGroups
+#ViewerGroups,
+#EditorGroups,
+#CreateTopLevelGroups,
+#Form_EditForm_ViewerGroups_Holder,
+#Form_EditForm_EditorGroups_Holder,
+#Form_EditForm_CreateTopLevelGroups_Holder
 {
-  margin-top: -20px;
+  margin-top: -10px;
+  padding-bottom: 20px;
+}
+
+.cms-container .CMSMain.CMSPageSettingsController #Root_Settings.tab .fieldgroup .fieldgroup-field
+{
+  padding-right: 0;
 }
 
 /* High Resolution Images (for Retina Devices):

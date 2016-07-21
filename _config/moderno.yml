@@ -13,6 +13,10 @@ SiteConfig:
   extensions:
     - ModernoConfigExtension
 
+SiteConfigLeftAndMain:
+  extensions:
+    - SiteConfigEditFormExtension
+
 CMSPagesController:
   awesome_icon: sitemap
 
