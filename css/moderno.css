@@ -1658,6 +1658,18 @@ body.cms.ss-uploadfield-edit-iframe span.readonly,
   padding-top: 2px;
 }
 
+.ss-uploadfield .ss-uploadfield-item-start .ui-button,
+.ss-uploadfield .ss-uploadfield-item-cancel .ui-button
+{
+  box-shadow: none !important;
+}
+
+.ss-uploadfield .ss-uploadfield-item-start .ui-button .ui-icon,
+.ss-uploadfield .ss-uploadfield-item-cancel .ui-button .ui-icon
+{
+  display: block !important;
+}
+
 div.field.upload div.message
 {
   margin: 16px 0 0;
