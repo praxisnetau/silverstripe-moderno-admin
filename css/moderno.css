@@ -1037,6 +1037,16 @@ fieldset.switch-states .switch .slide-button
   padding-bottom: 0;
 }
 
+.field.ss-toggle
+{
+  margin: 8px 0;
+}
+
+#Root_Settings .middleColumn.fieldgroup
+{
+  padding: 0;
+}
+
 .parentTypeSelector .field:last-child
 {
   border-bottom: 1px solid #d4d6d8;
@@ -1065,6 +1075,11 @@ fieldset.switch-states .switch .slide-button
 .field .middleColumn.fieldgroup
 {
   padding: 8px 0;
+}
+
+.ss-toggle .ui-accordion-content .field .middleColumn.fieldgroup
+{
+  padding: 0;
 }
 
 .ui-dialog,
@@ -1156,6 +1171,26 @@ fieldset.switch-states .switch .slide-button
   padding-left: 6px;
 }
 
+.chzn-container-single .chzn-single abbr
+{
+  top: 7px;
+  font-family: FontAwesome;
+  background: none transparent;
+  line-height: 14px;
+}
+
+.chzn-container-single .chzn-single abbr::before
+{
+  color: #757676;
+  content: "\f00d";
+  font-size: 14px;
+}
+
+.chzn-container-single .chzn-single abbr:hover::before
+{
+  color: #555656;
+}
+
 .chzn-container-single .chzn-single-with-drop,
 .field .chzn-container-single .chzn-single-with-drop
 {
@@ -1206,7 +1241,7 @@ fieldset.switch-states .switch .slide-button
 
 .field .chzn-container-multi .chzn-choices .search-choice .search-choice-close
 {
-  top: 3px;
+  top: 4px;
 
   color: #757676;
 
@@ -1221,7 +1256,7 @@ fieldset.switch-states .switch .slide-button
 
 .field .select2-container .select2-selection .select2-selection__choice .select2-selection__choice__remove
 {
-  top: 3px;
+  top: 4px;
   font-size: 0;
   font-weight: 400;
   font-family: 'FontAwesome';
@@ -1264,7 +1299,7 @@ fieldset.switch-states .switch .slide-button
   font-weight: 400;
   font-family: 'FontAwesome';
   
-  line-height: 24px;
+  line-height: 28px;
   
   text-indent: 0;
   text-align: center;
@@ -1292,8 +1327,9 @@ fieldset.switch-states .switch .slide-button
 
 .field .chzn-container-single .chzn-single
 {
+  height: 30px;
   font-size: 13px;
-
+  line-height: 30px;
   background-image: none;
 }
 
@@ -1335,6 +1371,12 @@ fieldset.switch-states .switch .slide-button
   font-size: 13px;
   font-weight: 400;
   line-height: 30px;
+}
+
+.field .chzn-container
+{
+  max-width: 512px;
+  vertical-align: bottom;
 }
 
 .field .chzn-container .chzn-results li
@@ -1499,6 +1541,18 @@ div.fieldgroup > div.middleColumn > div.field
   margin-top: 0 !important;
 }
 
+.field .fieldgroup-field > input.checkbox
+{
+  float: left;
+  margin-top: 10px;
+}
+
+.field .fieldgroup-field > label.checkboxfield-small
+{
+  float: left;
+  margin-left: 2px;
+}
+
 .field.checkbox input,
 .field.checkbox label.right {
   vertical-align: middle;
@@ -1507,6 +1561,7 @@ div.fieldgroup > div.middleColumn > div.field
 .field label.right
 {
   color: #777;
+  margin-top: 6px;
 }
 
 .fieldgroup .fieldgroup-field {
@@ -1630,6 +1685,7 @@ body.cms.ss-uploadfield-edit-iframe span.readonly,
   margin: 0 !important;
 }
 
+.ss-uploadfield .ss-uploadfield-item-info .ss-ui-button,
 .ss-uploadfield .ss-uploadfield-files .ss-uploadfield-item-actions > button
 {
   margin: 5px 8px 0 0;
@@ -1943,11 +1999,6 @@ div.Actions > input.ss-ui-button
 .cms-dialog-content div.Actions
 {
   padding: 0;
-}
-
-.ss-uploadfield-edit-iframe form.small div.field
-{
-  padding-right: 10px;
 }
 
 .ss-uploadfield-edit-iframe form.small .field input.text,
@@ -2353,12 +2404,15 @@ div.TreeDropdownField .treedropdownfield-title
 {
   width: 94%;
   
-  padding: 5px;
+  padding: 0 0 0 6px;
+  
+  height: 30px;
+  line-height: 30px;
 }
 
 div.TreeDropdownField .treedropdownfield-toggle-panel-link
 {
-  padding: 5px 0px;
+  padding: 7px 0px;
   
   min-height: 16px;
   line-height: 15px;
@@ -2366,6 +2420,11 @@ div.TreeDropdownField .treedropdownfield-toggle-panel-link
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
+}
+
+div.TreeDropdownField .treedropdownfield-toggle-panel-link a
+{
+  outline: 0;
 }
 
 /* Icon Styles:
