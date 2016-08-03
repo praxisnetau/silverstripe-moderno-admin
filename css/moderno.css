@@ -1103,7 +1103,7 @@ fieldset.switch-states .switch .slide-button
   border-radius: 0px;
 }
 
-.field input.timepicker
+.field.datetimepicker input.timepicker
 {
   margin-left: 5px;
 }
