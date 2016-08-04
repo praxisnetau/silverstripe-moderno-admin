@@ -1042,11 +1042,6 @@ fieldset.switch-states .switch .slide-button
   margin: 8px 0;
 }
 
-#Root_Settings .middleColumn.fieldgroup
-{
-  padding: 0;
-}
-
 .parentTypeSelector .field:last-child
 {
   border-bottom: 1px solid #d4d6d8;
@@ -1544,13 +1539,14 @@ div.fieldgroup > div.middleColumn > div.field
 .field .fieldgroup-field > input.checkbox
 {
   float: left;
-  margin-top: 10px;
+  margin-top: 2px;
 }
 
 .field .fieldgroup-field > label.checkboxfield-small
 {
   float: left;
   margin-left: 2px;
+  padding-top: 0;
 }
 
 .field.checkbox input,
@@ -2068,6 +2064,12 @@ div.ModelAdmin #Form_ImportForm div.Actions
   padding: 4px 0;
 }
 
+#cms-content-tools-ModelAdmin.cms-content-filters #Form_ImportForm div.Actions
+{
+  padding: 0;
+  margin-bottom: 0;
+}
+
 div.ModelAdmin #Form_ImportForm div.importSpec > div.details
 {
   margin-top: 10px;
@@ -2077,13 +2079,17 @@ div.ModelAdmin #Form_ImportForm div.importSpec > div.details
 
 div.ModelAdmin #Form_ImportForm div.importSpec > div.details > h4
 {
+  margin: 0 0 10px 0;
   background-color: #98aab6;
   color: #fff;
   padding: 10px;
+  font-weight: 500;
+  font-size: 13px;
 }
 
 div.ModelAdmin #Form_ImportForm div.importSpec > div.details > h5
 {
+  font-weight: 500;
   margin: 10px 10px 0;
   padding-bottom: 10px;
 }
@@ -2098,6 +2104,53 @@ div.ModelAdmin #Form_ImportForm #_CsvFile,
 div.ModelAdmin #Form_ImportForm #Form_ImportForm__CsvFile
 {
   max-width: 184px;
+}
+
+div.ModelAdmin > div.cms-content-fields
+{
+  padding: 0;
+}
+
+#cms-content-tools-ModelAdmin.cms-content-filters
+{
+  margin: 0;
+  padding: 0 15px 15px 15px;
+}
+
+#cms-content-tools-ModelAdmin > h3.cms-panel-header
+{
+  margin: 15px 0 10px;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+#cms-content-tools-ModelAdmin .cms-search-form .field
+{
+  max-width: 320px;
+  margin-bottom: 10px;
+  padding-right: 0;
+}
+
+#cms-content-tools-ModelAdmin .cms-search-form .field .description
+{
+  font-size: 12px;
+}
+
+#cms-content-tools-ModelAdmin .field label.left
+{
+  font-size: 12px;
+  font-weight: 400;
+  padding-top: 0;
+}
+
+#cms-content-tools-ModelAdmin .field input.time
+{
+  width: 100%;
+}
+
+#cms-content-tools-ModelAdmin > #Form_SearchForm
+{
+  margin-bottom: 20px;
 }
 
 /* Tree Styles:
