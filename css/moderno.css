@@ -1029,7 +1029,8 @@ fieldset.switch-states .switch .slide-button
 }
 
 .field.tabset,
-.field.CompositeField
+.field.CompositeField,
+.ss-gridfield-table .field.fieldgroup.CompositeField
 {
   margin-top: 0;
   margin-bottom: 0;
@@ -1068,6 +1069,11 @@ fieldset.switch-states .switch .slide-button
 }
 
 .field .middleColumn.fieldgroup
+{
+  padding: 0;
+}
+
+#Root_Settings .field .middleColumn.fieldgroup
 {
   padding: 8px 0;
 }
@@ -1987,6 +1993,12 @@ div.Actions > input.ss-ui-button
   padding: 6px 14px;
 }
 
+.fieldgroup .fieldholder-small .ss-ui-button,
+.ss-gridfield-add-new-multi-class .ss-ui-button
+{
+  margin-top: 1px;
+}
+
 .cms-search-form div.Actions
 {
   padding-top: 2px;
@@ -2784,6 +2796,16 @@ div.cms_backlink a.backlink .ui-button-text
 fieldset.ss-gridfield
 {
   margin: 15px 0;
+}
+
+.cms .ss-gridfield
+{
+  overflow-x: visible;
+}
+
+.cms .AssetAdmin .ss-gridfield
+{
+  overflow-x: hidden;
 }
 
 div.ModelAdmin fieldset.ss-gridfield
