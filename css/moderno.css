@@ -1073,6 +1073,13 @@ fieldset.switch-states .switch .slide-button
   padding: 0;
 }
 
+.field .middleColumn.fieldgroup::after
+{
+  content: "";
+  display: table;
+  clear: both;
+}
+
 #Root_Settings .field .middleColumn.fieldgroup
 {
   padding: 8px 0;

@@ -9,6 +9,7 @@ AwesomeIconExtension:
     fa-align-right: f038
     fa-amazon: f270
     fa-ambulance: f0f9
+    fa-american-sign-language-interpreting: f2a3
     fa-anchor: f13d
     fa-android: f17b
     fa-angellist: f209
@@ -39,8 +40,11 @@ AwesomeIconExtension:
     fa-arrows-alt: f0b2
     fa-arrows-h: f07e
     fa-arrows-v: f07d
+    fa-asl-interpreting: f2a3
+    fa-assistive-listening-systems: f2a2
     fa-asterisk: f069
     fa-at: f1fa
+    fa-audio-description: f29e
     fa-automobile: f1b9
     fa-backward: f04a
     fa-balance-scale: f24e
@@ -75,6 +79,7 @@ AwesomeIconExtension:
     fa-bitbucket-square: f172
     fa-bitcoin: f15a
     fa-black-tie: f27e
+    fa-blind: f29d
     fa-bluetooth: f293
     fa-bluetooth-b: f294
     fa-bold: f032
@@ -83,6 +88,7 @@ AwesomeIconExtension:
     fa-book: f02d
     fa-bookmark: f02e
     fa-bookmark-o: f097
+    fa-braille: f2a1
     fa-briefcase: f0b1
     fa-btc: f15a
     fa-bug: f188
@@ -185,6 +191,8 @@ AwesomeIconExtension:
     fa-dashboard: f0e4
     fa-dashcube: f210
     fa-database: f1c0
+    fa-deaf: f2a4
+    fa-deafness: f2a4
     fa-dedent: f03b
     fa-delicious: f1a5
     fa-desktop: f108
@@ -206,6 +214,7 @@ AwesomeIconExtension:
     fa-envelope: f0e0
     fa-envelope-o: f003
     fa-envelope-square: f199
+    fa-envira: f299
     fa-eraser: f12d
     fa-eur: f153
     fa-euro: f153
@@ -226,6 +235,7 @@ AwesomeIconExtension:
     fa-facebook-square: f082
     fa-fast-backward: f049
     fa-fast-forward: f050
+    fa-fa: f2b4
     fa-fax: f1ac
     fa-feed: f09e
     fa-female: f182
@@ -254,6 +264,7 @@ AwesomeIconExtension:
     fa-fire: f06d
     fa-fire-extinguisher: f134
     fa-firefox: f269
+    fa-first-order: f2b0
     fa-flag: f024
     fa-flag-checkered: f11e
     fa-flag-o: f11d
@@ -267,6 +278,7 @@ AwesomeIconExtension:
     fa-folder-open-o: f115
     fa-font: f031
     fa-fonticons: f280
+    fa-font-awesome: f2b4
     fa-fort-awesome: f286
     fa-forumbee: f211
     fa-forward: f04e
@@ -289,11 +301,16 @@ AwesomeIconExtension:
     fa-github: f09b
     fa-github-alt: f113
     fa-github-square: f092
+    fa-gitlab: f296
     fa-gittip: f184
     fa-glass: f000
+    fa-glide: f2a5
+    fa-glide-g: f2a6
     fa-globe: f0ac
     fa-google: f1a0
     fa-google-plus: f0d5
+    fa-google-plus-circle: f2b3
+    fa-google-plus-official: f2b3
     fa-google-plus-square: f0d4
     fa-google-wallet: f1ee
     fa-graduation-cap: f19d
@@ -314,6 +331,7 @@ AwesomeIconExtension:
     fa-hand-scissors-o: f257
     fa-hand-spock-o: f259
     fa-hand-stop-o: f256
+    fa-hard-of-hearing: f2a4
     fa-hashtag: f292
     fa-hdd-o: f0a0
     fa-header: f1dc
@@ -386,6 +404,7 @@ AwesomeIconExtension:
     fa-long-arrow-left: f177
     fa-long-arrow-right: f178
     fa-long-arrow-up: f176
+    fa-low-vision: f2a8
     fa-magic: f0d0
     fa-magnet: f076
     fa-mail-forward: f064
@@ -457,7 +476,7 @@ AwesomeIconExtension:
     fa-photo: f03e
     fa-picture-o: f03e
     fa-pie-chart: f200
-    fa-pied-piper: f1a7
+    fa-pied-piper: f2a3
     fa-pied-piper-alt: f1a8
     fa-pinterest: f0d2
     fa-pinterest-p: f231
@@ -479,6 +498,7 @@ AwesomeIconExtension:
     fa-qrcode: f029
     fa-question: f128
     fa-question-circle: f059
+    fa-question-circle-o: f29c
     fa-quote-left: f10d
     fa-quote-right: f10e
     fa-ra: f1d0
@@ -533,7 +553,9 @@ AwesomeIconExtension:
     fa-shopping-basket: f291
     fa-shopping-cart: f07a
     fa-sign-in: f090
+    fa-sign-language: f2a7
     fa-sign-out: f08b
+    fa-signing: f2a7
     fa-signal: f012
     fa-simplybuilt: f215
     fa-sitemap: f0e8
@@ -543,6 +565,9 @@ AwesomeIconExtension:
     fa-sliders: f1de
     fa-slideshare: f1e7
     fa-smile-o: f118
+    fa-snapchat: f2ab
+    fa-snapchat-ghost: f2ac
+    fa-snapchat-square: f2ad
     fa-soccer-ball-o: f1e3
     fa-sort: f0dc
     fa-sort-alpha-asc: f15d
@@ -605,6 +630,7 @@ AwesomeIconExtension:
     fa-th: f00a
     fa-th-large: f009
     fa-th-list: f00b
+    fa-themeisle: f2b2
     fa-thumb-tack: f08d
     fa-thumbs-down: f165
     fa-thumbs-o-down: f088
@@ -644,6 +670,7 @@ AwesomeIconExtension:
     fa-umbrella: f0e9
     fa-underline: f0cd
     fa-undo: f0e2
+    fa-universal-access: f29a
     fa-university: f19c
     fa-unlink: f127
     fa-unlock: f09c
@@ -662,11 +689,14 @@ AwesomeIconExtension:
     fa-venus-double: f226
     fa-venus-mars: f228
     fa-viacoin: f237
+    fa-viadeo: f2a9
+    fa-viadeo-square: f2aa
     fa-video-camera: f03d
     fa-vimeo: f27d
     fa-vimeo-square: f194
     fa-vine: f1ca
     fa-vk: f189
+    fa-volume-control-phone: f2a0
     fa-volume-down: f027
     fa-volume-off: f026
     fa-volume-up: f028
@@ -676,11 +706,14 @@ AwesomeIconExtension:
     fa-weixin: f1d7
     fa-whatsapp: f232
     fa-wheelchair: f193
+    fa-wheelchair-alt: f29b
     fa-wifi: f1eb
     fa-wikipedia-w: f266
     fa-windows: f17a
     fa-won: f159
     fa-wordpress: f19a
+    fa-wpbeginner: f297
+    fa-wpforms: f298
     fa-wrench: f0ad
     fa-xing: f168
     fa-xing-square: f169
@@ -691,6 +724,7 @@ AwesomeIconExtension:
     fa-yc-square: f1d4
     fa-yelp: f1e9
     fa-yen: f157
+    fa-yoast: f2b1
     fa-youtube: f167
     fa-youtube-play: f16a
     fa-youtube-square: f166

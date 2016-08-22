@@ -10,7 +10,7 @@ A [SilverStripe](http://silverstripe.org) module to give the CMS a more modern, 
 
 ## Features ##
 
-* **NEW!** site config panel with color picker fields
+* site config panel with color picker fields
 * resizable site tree
 * Flat, modern, minimalist look and feel
 * Uses [Font Awesome](http://fontawesome.io) for most icons
