@@ -4,12 +4,12 @@
 <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 <title>$Title</title>
 <% base_tag %>
-<% require css("silverstripe-moderno-admin/css/moderno.min.css") %>
+<% require css("moderno-admin/css/moderno.min.css") %>
 </head>
 <body class="$CSSClasses">
-	$Content
-	<div class="right">
-		$Form
-	</div>
+  $Content
+  <div class="right">
+    $Form
+  </div>
 </body>
 </html>

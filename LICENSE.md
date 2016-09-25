@@ -1,4 +1,4 @@
-Copyright (c) 2015, Praxis Interactive
+Copyright (c) 2016, Praxis Interactive
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without

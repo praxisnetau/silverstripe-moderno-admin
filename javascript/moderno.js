@@ -17,7 +17,7 @@
                 
                 handles: 'e',
                 
-                resize: function(event,ui) { $.cookie(cookieName, self.outerWidth()); }
+                resize: function() { $.cookie(cookieName, self.outerWidth()); }
                 
             });
             
@@ -33,7 +33,7 @@
             
             var width = $.cookie(cookieName);
             
-            if (width != null) $(selector).css('width', width + 'px');
+            if (width !== null) $(selector).css('width', width + 'px');
             
         }
         

@@ -17,7 +17,7 @@
 		"tractorcow/silverstripe-colorpicker": "3.0.*@dev"
 	},
 	"extra": {
-		"installer-name": "silverstripe-moderno-admin"
+		"installer-name": "moderno-admin"
 	},
-	"target-dir": "silverstripe-moderno-admin"
+	"target-dir": "moderno-admin"
 }

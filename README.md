@@ -24,12 +24,12 @@ A [SilverStripe](http://silverstripe.org) module to give the CMS a more modern, 
 #### Composer:
 
 ```
-require: "praxisnetau/silverstripe-moderno-admin": "dev-master"
+require: "praxisnetau/silverstripe-moderno-admin": "~1.0"
 ```
 
 #### Manual:
 
-To install this module manually, clone or download the repo, copy it to your document root ensuring the folder is called `silverstripe-moderno-admin` and finally run a `/dev/build`.
+To install this module manually, clone or download the repo, copy it to your document root ensuring the folder is called `moderno-admin` and finally run a `/dev/build`.
 
 ## Usage ##
 
