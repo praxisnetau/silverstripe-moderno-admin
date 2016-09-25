@@ -620,12 +620,25 @@ body, html, .ui-widget, .ss-ui-button, .ui-widget button, .ui-widget select, .ui
 {
   border: 0;
 
-  padding: 6px;
+  height: 18px;
+
+  padding: 7px;
   margin-bottom: 0;
-  
+
   background: #80888E none;
-  
+
   border-radius: 0 !important;
+}
+
+.cms-content-batchactions .view-mode-batchactions-wrapper #view-mode-batchactions
+{
+  margin-top: 3px;
+  margin-left: 3px;
+}
+
+.cms-content-toolbar .ss-ui-button .ui-button-text
+{
+  padding: 7px 15px;
 }
 
 .cms-content-batchactions .view-mode-batchactions-wrapper:hover
@@ -650,7 +663,7 @@ body, html, .ui-widget, .ss-ui-button, .ui-widget button, .ui-widget select, .ui
   
   font-weight: 400;
 
-  padding: 1px 0 1px 6px;
+  padding: 0 0 0 6px;
   
   text-shadow: none;
 }
@@ -669,7 +682,7 @@ body, html, .ui-widget, .ss-ui-button, .ui-widget button, .ui-widget select, .ui
 
 .cms-content-batchactions .cms-batch-actions .Actions .ss-ui-button
 {
-  height: 30px;
+  height: 32px;
 }
 
 .cms .ss-ui-action-tabset.action-menus.ss-tabset .ui-tabs-panel button.ss-ui-action-destructive:hover,
@@ -899,6 +912,7 @@ fieldset.switch-states .switch .slide-button
   content: "\f040";
 }
 
+.cms_backlink > a.backlink::before,
 .cms_backlink [class^="font-icon-"]::before,
 .cms_backlink [class*="font-icon-"]::before,
 .cms-actions-buttons-row [class^="font-icon-"]::before,
@@ -907,6 +921,23 @@ fieldset.switch-states .switch .slide-button
 .cms .AssetAdmin .cms-content-toolbar [class*="font-icon-"]::before
 {
   font-family: 'FontAwesome' !important;
+}
+
+.cms_backlink > a.backlink {
+  color: #66727d;
+  background: none;
+}
+
+.cms_backlink > a.backlink:hover,
+.cms_backlink > a.backlink:active,
+.cms_backlink > a.backlink:focus {
+  color: #383f45;
+  background: none;
+}
+
+.cms-content-header .cms-content-header-info .cms_backlink,
+.cms-content-header .cms-content-header-info .breadcrumbs-wrapper {
+  vertical-align: middle;
 }
 
 .font-icon-plus::before
@@ -934,6 +965,7 @@ fieldset.switch-states .switch .slide-button
   content: "\f021";
 }
 
+.cms_backlink > a.backlink::before,
 .font-icon-left-open-big::before
 {
   content: "\f104";
@@ -944,13 +976,14 @@ fieldset.switch-states .switch .slide-button
   margin: 0;
   padding: 0;
   width: 15px;
+  height: 36px;
   line-height: 30px;
 }
 
 .cms-content-header .cms-content-header-info .cms_backlink .ss-ui-button::before
 {
   font-size: 30px;
-  line-height: 30px;
+  line-height: 36px;
 }
 
 .ui-tabs .ui-tabs-panel
@@ -1061,7 +1094,8 @@ fieldset.switch-states .switch .slide-button
   margin-bottom: 0;
 }
 
-.field.fieldgroup
+.field.fieldgroup,
+.field.displaylogicwrapper
 {
   margin: 10px 0;
   padding: 0 0 10px;
@@ -1070,7 +1104,7 @@ fieldset.switch-states .switch .slide-button
 
 .field .middleColumn.fieldgroup
 {
-  padding: 0;
+  padding: 8px 0 0;
 }
 
 .field .middleColumn.fieldgroup::after
@@ -1078,11 +1112,6 @@ fieldset.switch-states .switch .slide-button
   content: "";
   display: table;
   clear: both;
-}
-
-#Root_Settings .field .middleColumn.fieldgroup
-{
-  padding: 8px 0;
 }
 
 .ss-toggle .ui-accordion-content .field .middleColumn.fieldgroup
@@ -1125,6 +1154,16 @@ fieldset.switch-states .switch .slide-button
 .ss-toggle .ui-accordion-content .field
 {
   padding-bottom: 12px;
+}
+
+.ss-toggle .ui-accordion-content .field:last-child
+{
+  border-bottom: 0;
+}
+
+.ss-toggle .ui-accordion-content .field.displaylogicwrapper
+{
+  padding: 0;
 }
 
 .ss-toggle .ui-accordion-content .field.readonly:last-child
@@ -1997,6 +2036,9 @@ tr.ss-gridfield-item .ss-ui-button:active
 
 div.Actions > input.ss-ui-button
 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   padding: 6px 14px;
 }
 
@@ -2737,7 +2779,7 @@ div.cms_backlink
 
 div.cms_backlink a.backlink .ui-button-text
 {
-  padding: 4px 14px 5px;
+  display: none;
 }
 
 /* Form Styles:
