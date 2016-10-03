@@ -41,11 +41,11 @@
     
     // Create Animated Icons for Buttons:
     
-    $("#ActionMenus_MoreOptions > button").entwine({
+    $(".cms .ss-ui-button > .ui-button-text").entwine({
         
-        onadd: function() {
+        onmatch: function() {
             
-            this.prepend('<i class="fa fa-refresh fa-spin" style="display: none"></i>');
+            this.prepend('<i class="fa fa-refresh fa-spin" style="display: none"></i> ');
             
         }
         

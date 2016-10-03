@@ -601,12 +601,12 @@ fieldset.switch-states .switch .slide-button {
 }
 
 .cms-content-fields .ui-tabs-nav li {
-  margin-left: 0px;
+  margin: 0 auto !important;
 }
 
 .cms-content-fields .ui-tabs-nav li.first a {
-  margin-left: 0px;
-  padding-left: 0px;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 .ui-tabs .ui-tabs-nav li {
@@ -820,6 +820,10 @@ fieldset.switch-states .switch .slide-button {
   margin: 16px 16px 0;
 }
 
+div.ModelAdmin .cms-edit-form > .message {
+  margin: 0 0 16px;
+}
+
 .CMSPageHistoryController .ui-tabs-panel .message {
   margin: 0 0 10px;
 }
@@ -897,6 +901,14 @@ fieldset.switch-states .switch .slide-button {
   padding: 8px 0 0;
 }
 
+.field.CompositeField .middleColumn.fieldgroup {
+  padding: 0;
+}
+
+#Root_Settings .field.CompositeField .middleColumn.fieldgroup {
+  padding-top: 8px;
+}
+
 .field .middleColumn.fieldgroup::after {
   content: "";
   display: table;
@@ -936,6 +948,13 @@ fieldset.switch-states .switch .slide-button {
 
 .ss-toggle .ui-accordion-content .field {
   padding-bottom: 12px;
+}
+
+.ss-toggle .ui-accordion-content > h2,
+.ss-toggle .ui-accordion-content > h3,
+.ss-toggle .ui-accordion-content > h4,
+.ss-toggle .ui-accordion-content > h5 {
+  padding: 0 12px;
 }
 
 .ss-toggle .ui-accordion-content .field:last-child {
@@ -1697,10 +1716,15 @@ div.Actions > input.ss-ui-button {
   padding-left: 0;
 }
 
-.cms .button-no-style button.loading i.fa,
+.cms button.loading i.fa,
 .cms .ss-ui-action-tabset.action-menus.ss-tabset .ui-tabs-panel button.loading i.fa {
   display: inline-block !important;
-  margin-right: 2px;
+  margin-right: 2px !important;
+}
+
+.cms button.loading,
+.cms .ss-ui-button.loading {
+  color: #fff !important;
 }
 
 .cms .ss-ui-button[class*="font-icon-"]:hover,
