@@ -10,6 +10,8 @@ class SiteConfigEditFormExtension extends LeftAndMainExtension
      */
     public function init()
     {
-        Requirements::javascript(CMS_DIR . '/javascript/CMSMain.EditForm.js');
+        if (defined('CMS_DIR')) {
+            Requirements::javascript(CMS_DIR . '/javascript/CMSMain.EditForm.js');
+        }
     }
 }
