@@ -26,11 +26,21 @@ class AwesomeIconExtension extends LeftAndMainExtension
         
         $css = array();
         
+        // Obtain Default ModelAdmin Icon:
+        
+        $dma_icon = Config::inst()->get('ModelAdmin', 'menu_icon', Config::FIRST_SET);
+        
+        // Obtain Viewable Menu Items:
+        
         $menu_items = CMSMenu::get_viewable_menu_items();
         
         // Iterate Viewable Menu Items:
         
         foreach ($menu_items as $class => $item) {
+            
+            // Obtain Bitmap Icon:
+            
+            $bmp_icon = Config::inst()->get($class, 'menu_icon', Config::FIRST_SET);
             
             // Does this class have an awesome icon?
             
@@ -46,19 +56,37 @@ class AwesomeIconExtension extends LeftAndMainExtension
                 
                 $icon = 'fa-question-circle';
                 
-            } else {
+            } elseif ($bmp_icon == $dma_icon) {
                 
-                // The default icon, for ModelAdmin menu items:
+                // Replace default ModelAdmin icon:
                 
                 $icon = 'fa-database';
+                
+            } else {
+                
+                // By default, fallback to the bitmap icon:
+                
+                $icon = false;
                 
             }
             
             // Define CSS for this icon:
             
-            $css[] = ".icon.icon-16.icon-" . strtolower($class) . ":before {";
-            $css[] = "  content: \"\\" . $this->getIconUnicode($icon) . "\";";
-            $css[] = "}";
+            if ($icon) {
+                
+                // Disable Bitmap Icon:
+                
+                $css[] = ".icon.icon-16.icon-" . strtolower($class) . " {";
+                $css[] = "  background-image: none !important;";
+                $css[] = "}";
+                
+                // Enable Awesome Icon:
+                
+                $css[] = ".icon.icon-16.icon-" . strtolower($class) . ":before {";
+                $css[] = "  content: \"\\" . $this->getIconUnicode($icon) . "\";";
+                $css[] = "}";
+                
+            }
         }
         
         // Answer CSS String:

@@ -2094,10 +2094,21 @@ div.TreeDropdownField .treedropdownfield-toggle-panel-link a {
 /* Icon Styles:
 ===================================================================================================================== */
 
-.icon {
+.cms-menu-list .icon.icon-16,
+.cms-content-header .section-icon.icon {
   text-indent: 0;
   font-size: 14px;
   font-family: "FontAwesome";
+  background-repeat: no-repeat;
+}
+
+.cms-menu-list .icon-cmspagescontroller,
+.cms-menu-list .icon-assetadmin,
+.cms-menu-list .icon-reportadmin,
+.cms-menu-list .icon-securityadmin,
+.cms-menu-list .icon-cmssettingscontroller,
+.cms-menu-list .icon-help,
+.cms-content-header .section-icon.icon {
   background: none !important;
 }
 
