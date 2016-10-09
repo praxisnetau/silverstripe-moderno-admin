@@ -48,28 +48,38 @@ html,
 }
 
 .cms-logo a {
-  top: 12px;
-  bottom: 0;
-  width: 24px;
+  float: left;
   margin-left: 0;
+  min-width: 24px;
+  position: static;
+  box-sizing: border-box;
   background: url(../images/logos/silverstripe.svg);
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.cms-menu.collapsed .cms-logo a {
+  width: 24px;
+  height: 24px;
 }
 
 .cms-logo span {
-  padding: 0;
+  height: 24px;
   font-size: 13px;
   font-weight: 500;
   line-height: 16px;
   margin-left: 32px;
-  display: inline-block;
+  padding: 0 0 0 8px;
+  display: table-cell;
   vertical-align: middle;
 }
 
 .cms-logo-header {
   background-image: none;
   background-color: #1B354C;
+  min-height: 92px;
+  height: auto;
 }
 
 .cms-login-status {
