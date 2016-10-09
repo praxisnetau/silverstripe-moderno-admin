@@ -10,6 +10,7 @@ A [SilverStripe](http://silverstripe.org) module to give the CMS a more modern, 
 
 ## Features ##
 
+* **NEW:** branding settings for app name, app link, logo and loading images
 * site config panel with color picker fields
 * resizable site tree
 * Flat, modern, minimalist look and feel
@@ -24,7 +25,7 @@ A [SilverStripe](http://silverstripe.org) module to give the CMS a more modern, 
 #### Composer:
 
 ```
-require: "praxisnetau/silverstripe-moderno-admin": "~1.0"
+require: "praxisnetau/silverstripe-moderno-admin": "~1.1"
 ```
 
 #### Manual:

@@ -43,3 +43,41 @@
     color: #{$ModernoProfileLinkColor};
   }
 <% end_if %>
+
+<% if $ModernoLogoImageExists %>
+  .cms-logo a {
+    background-image: url({$ModernoLogoImageResized.URL});
+    <% if $ModernoHideSiteName %>
+      width: 144px;
+    <% else %>
+      <% if $ModernoLogoImageWidth %>width: {$ModernoLogoImageWidth}px;<% end_if %>
+    <% end_if %>
+    <% if $ModernoLogoImageHeight %>height: {$ModernoLogoImageHeight}px;<% end_if %>
+  }
+  
+  <% if $ModernoSupportRetina %>
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.3),
+    only screen and (-o-min-device-pixel-ratio: 13/10),
+    only screen and (min-resolution: 120dpi) {
+      
+      .cms-logo a {
+        background-image: url({$ModernoLogoImageRetina.URL});
+        background-size: {$ModernoLogoRetinaBackgroundSize};
+      }
+      
+    }
+  <% end_if %>
+  
+<% end_if %>
+
+<% if $ModernoLoadingImageExists %>
+  .ss-loading-screen .loading-logo {
+    background-image: url({$ModernoLoadingImageResized.URL});
+  }
+<% end_if %>
+
+<% if $ModernoHideSiteName %>
+  .cms-logo span {
+    display: none;
+  }
+<% end_if %>
