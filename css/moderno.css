@@ -2168,7 +2168,7 @@ div.CMSProfileController .cms-content-header .cms-content-header-info .section-i
 }
 
 .notice-item-close::before {
-  color: #fff;
+  color: #666;
   content: "\f00d";
   font-size: 14px;
   font-weight: normal;
