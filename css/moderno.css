@@ -43,6 +43,10 @@ html,
   padding: 12px 0 11px;
 }
 
+.cms-menu.collapsed .cms-logo span {
+  display: none;
+}
+
 .cms-menu.collapsed .cms-login-status {
   height: 16px;
 }
