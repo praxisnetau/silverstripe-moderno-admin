@@ -9,14 +9,11 @@ LeftAndMain:
   extensions:
     - AwesomeIconExtension
     - ModernoAdminExtension
+    - CMSMainEditFormExtension
 
 SiteConfig:
   extensions:
     - ModernoConfigExtension
-
-SiteConfigLeftAndMain:
-  extensions:
-    - SiteConfigEditFormExtension
 
 ModernoConfigExtension:
   resize_methods:

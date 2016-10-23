@@ -464,8 +464,13 @@ a .jstree-pageicon {
   box-shadow: none;
 }
 
+.cms-content-tools .field.checkbox {
+  margin: 5px 0;
+  padding: 0 0 5px;
+}
+
 .cms-content-tools .field.checkbox input {
-  margin-right: 2px;
+  margin: 9px 3px 0 0;
   vertical-align: middle;
 }
 
@@ -815,7 +820,15 @@ fieldset.switch-states .switch .slide-button {
 }
 
 .ui-tabs .ui-tabs-panel {
+  padding: 10px 15px;
+}
+
+.SecurityAdmin .ui-tabs .ui-tabs-panel {
   padding: 15px;
+}
+
+.ss-tabset.ui-tabs.ui-tabs-panel {
+  padding: 0;
 }
 
 .ui-tabs .ui-tabs-nav ~ .ui-tabs-panel {
@@ -831,15 +844,19 @@ fieldset.switch-states .switch .slide-button {
 }
 
 .cms-edit-form .message {
-  margin: 16px 16px 0;
+  margin: 15px 15px 0;
+}
+
+.cms-edit-form .cms-panel-padded .message {
+  margin: 0 0 10px;
 }
 
 div.ModelAdmin .cms-edit-form > .message {
-  margin: 0 0 16px;
+  margin: 0 0 15px;
 }
 
 .CMSPageHistoryController .ui-tabs-panel .message {
-  margin: 0 0 10px;
+  margin: 5px 0 10px;
 }
 
 /* Field Styles:
@@ -919,10 +936,6 @@ div.ModelAdmin .cms-edit-form > .message {
   padding: 0;
 }
 
-#Root_Settings .field.CompositeField .middleColumn.fieldgroup {
-  padding-top: 8px;
-}
-
 .field .middleColumn.fieldgroup::after {
   content: "";
   display: table;
@@ -964,11 +977,19 @@ div.ModelAdmin .cms-edit-form > .message {
   padding-bottom: 12px;
 }
 
+.ss-toggle .ui-accordion-content .field.checkbox {
+  padding-bottom: 8px;
+}
+
 .ss-toggle .ui-accordion-content > h2,
 .ss-toggle .ui-accordion-content > h3,
 .ss-toggle .ui-accordion-content > h4,
 .ss-toggle .ui-accordion-content > h5 {
   padding: 0 12px;
+}
+
+.ss-toggle .ui-accordion-content .fieldgroup .fieldgroup-field {
+  padding-top: 0;
 }
 
 .ss-toggle .ui-accordion-content .field:last-child {
@@ -988,6 +1009,11 @@ div.ModelAdmin .cms-edit-form > .message {
   color: #60686E;
   font-size: 11px;
   margin: 8px 0 4px;
+}
+
+.field.htmleditor {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .htmleditor label.left {
@@ -1160,6 +1186,7 @@ div.ModelAdmin .cms-edit-form > .message {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
+  border-color: #C4C6C8;
 }
 
 .cms-content-toolbar .chzn-container-single .chzn-single div b {
@@ -1300,6 +1327,8 @@ div.fieldgroup > div.middleColumn > div.field {
   border-bottom: 0 none;
 }
 
+.field.checkbox input,
+.field.checkbox label.right,
 .fieldgroup .fieldgroup-field input.checkbox,
 .fieldgroup .fieldgroup-field label {
   vertical-align: middle;
@@ -1309,20 +1338,28 @@ div.fieldgroup > div.middleColumn > div.field {
   margin-top: 0 !important;
 }
 
+.field.checkbox input,
 .field .fieldgroup-field > input.checkbox {
   float: left;
-  margin-top: 2px;
+  margin-top: 9px;
 }
 
+.field.checkbox label.right,
 .field .fieldgroup-field > label.checkboxfield-small {
   float: left;
+  margin-top: 8px;
   margin-left: 2px;
   padding-top: 0;
+  line-height: 16px;
 }
 
-.field.checkbox input,
 .field.checkbox label.right {
-  vertical-align: middle;
+  padding-bottom: 8px;
+}
+
+.ss-toggle .ui-accordion-content .fieldgroup .fieldgroup-field > label.checkboxfield-small {
+  padding: 0;
+  margin-right: 0;
 }
 
 .field label.right {
@@ -1467,16 +1504,37 @@ body.cms.ss-uploadfield-edit-iframe span.readonly,
 }
 
 div.field.upload div.message {
-  margin: 16px 0 0;
+  margin: 15px 0 0;
 }
 
 .fieldgroup.stacked .fieldgroup-field {
   margin-bottom: 10px;
 }
 
+.cms-content-filters {
+  padding-top: 0;
+}
+
+#cms-content-filters-CMSPagesController,
+#cms-content-filters-AssetAdmin {
+  margin-bottom: 15px;
+}
+
+.cms-panel-content .cms-content-filters {
+  padding-top: 15px;
+}
+
+.cms-panel .cms-content-filters .Actions {
+  margin: 0;
+}
+
+.cms-content-filters .field {
+  margin-bottom: 10px;
+}
+
 .cms-content-filters .field.fieldgroup {
   margin-top: 0;
-  padding: 0 16px;
+  padding: 0 15px;
   border-bottom: 0;
 }
 
@@ -1694,10 +1752,6 @@ div.Actions > input.ss-ui-button {
 .fieldgroup .fieldholder-small .ss-ui-button,
 .ss-gridfield-add-new-multi-class .ss-ui-button {
   margin-top: 1px;
-}
-
-.cms-search-form div.Actions {
-  padding-top: 2px;
 }
 
 .cms-dialog-content div.Actions {
@@ -2079,6 +2133,20 @@ div.TreeDropdownField .treedropdownfield-panel {
   border-radius: 0;
 }
 
+.field .TreeDropdownField.treedropdownfield-with-rise {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
+.field .TreeDropdownField.treedropdownfield-with-rise .treedropdownfield-panel {
+  border-color: #C4C6C8;
+  border-bottom: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
 div.TreeDropdownField .treedropdownfield-search {
   font-family: 'Roboto';
   border-color: #C4C6C8;
@@ -2256,7 +2324,7 @@ div.CMSProfileController .cms-content-header .cms-content-header-info .section-i
 }
 
 .htmleditorfield-dialog .cms-content-header h3 {
-  padding: 12px 16px !important;
+  padding: 12px 15px !important;
 }
 
 .cms-content-header h2 * {
@@ -2268,7 +2336,7 @@ div.CMSProfileController .cms-content-header .cms-content-header-info .section-i
 }
 
 .has-panel .cms-content-header .cms-content-header-info {
-  padding-top: 16px;
+  padding-top: 15px;
 }
 
 .cms-content-header .cms-content-header-info .section-icon {
@@ -2696,6 +2764,10 @@ div.ModelAdmin .ss-gridfield button {
   content: "\f0c9";
 }
 
+.ss-gridfield-orderable .col-reorder .handle span.icon {
+  background-image: none;
+}
+
 .cms table.ss-gridfield-table tr td.bottom-all .datagrid-pagination > button.action {
   font-size: 11px;
 }
@@ -2996,7 +3068,15 @@ form.small .cms-file-info-preview img {
 }
 
 .cms form.AssetAdmin .message {
-  margin: 0 0 16px;
+  margin: 0 0 15px;
+}
+
+.cms .AssetAdmin .cms-content-fields {
+  background-color: #E6EAED;
+}
+
+.cms .AssetAdmin .cms-content-fields form.cms-edit-form.AssetAdmin {
+  overflow-y: visible;
 }
 
 .cms .AssetAdmin table.ss-gridfield-table td.col-StripThumbnail {
@@ -3020,6 +3100,10 @@ form.small .cms-file-info-preview img {
   padding-top: 5px;
 }
 
+.cms .AssetAdmin form.AssetAdmin div.Actions {
+  padding: 15px 0;
+}
+
 .cms .AssetAdmin .cms-content-toolbar {
   margin: 0;
 }
@@ -3041,6 +3125,10 @@ form.small .cms-file-info-preview img {
 
 .ReportAdmin > fieldset {
   padding: 15px;
+}
+
+.cms .cms-panel-padded.ReportAdmin > fieldset {
+  padding-top: 15px;
 }
 
 .ReportAdmin > fieldset > h3 {
@@ -3090,9 +3178,15 @@ div.SecurityAdmin #Form_EditForm_Roles {
 #CreateTopLevelGroups,
 #Form_EditForm_ViewerGroups_Holder,
 #Form_EditForm_EditorGroups_Holder,
+#Form_ItemEditForm_ViewerGroups_Holder,
 #Form_EditForm_CreateTopLevelGroups_Holder {
   margin-top: -10px;
   padding-bottom: 20px;
+}
+
+#Form_EditForm_ViewerGroups_Holder,
+#Form_ItemEditForm_ViewerGroups_Holder {
+  display: none;
 }
 
 .cms-container .CMSMain.CMSPageSettingsController #Root_Settings.tab .fieldgroup .fieldgroup-field {
