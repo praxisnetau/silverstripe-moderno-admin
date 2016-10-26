@@ -851,6 +851,10 @@ fieldset.switch-states .switch .slide-button {
   margin: 0 0 10px;
 }
 
+.CMSPageAddController .cms-edit-form .cms-panel-padded .message {
+  margin: 15px 0 0;
+}
+
 div.ModelAdmin .cms-edit-form > .message {
   margin: 0 0 15px;
 }
@@ -1493,14 +1497,60 @@ body.cms.ss-uploadfield-edit-iframe span.readonly,
   padding-top: 2px;
 }
 
-.ss-uploadfield .ss-uploadfield-item-start .ui-button,
-.ss-uploadfield .ss-uploadfield-item-cancel .ui-button {
-  box-shadow: none !important;
+.ss-uploadfield .ss-uploadfield-files .ss-uploadfield-item-start button.ui-button,
+.ss-uploadfield .ss-uploadfield-files .ss-uploadfield-item-cancel button.ui-button {
+  width: 18px;
+  height: 18px;
+  box-shadow: none;
+  background: none transparent;
 }
 
-.ss-uploadfield .ss-uploadfield-item-start .ui-button .ui-icon,
-.ss-uploadfield .ss-uploadfield-item-cancel .ui-button .ui-icon {
+.ss-uploadfield .ss-uploadfield-files .ss-uploadfield-item-start button.ui-button span.ui-icon,
+.ss-uploadfield .ss-uploadfield-files  .ss-uploadfield-item-cancel button.ui-button span.ui-icon {
+  width: 18px;
+  height: 18px;
+  text-indent: 0;
   display: block !important;
+  background: none transparent;
+}
+
+.ss-uploadfield .ss-uploadfield-files .ss-uploadfield-item-start button.ui-button span.ui-icon::before {
+  color: #0F8845;
+  content: "\f144";
+  font-family: "FontAwesome";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.ss-uploadfield .ss-uploadfield-files .ss-uploadfield-item-cancel button.ui-button span.ui-icon::before {
+  color: #B63051;
+  content: "\f056";
+  font-family: "FontAwesome";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.ss-uploadfield .middleColumn .ss-uploadfield-files .ss-uploadfield-item-progress {
+  right: 50px;
+  height: 15px;
+}
+
+.ss-uploadfield .middleColumn .ss-uploadfield-files .ss-uploadfield-item-progressbar,
+.ss-uploadfield .middleColumn .ss-uploadfield-files .ss-uploadfield-item-progressbarvalue {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  border: 0;
+}
+
+.ss-uploadfield .middleColumn .ss-uploadfield-files .ss-uploadfield-item-progressbar {
+  background: #D6DADD none;
+  height: 15px;
+}
+
+.ss-uploadfield .middleColumn .ss-uploadfield-files .ss-uploadfield-item-progressbarvalue {
+  background: #23B235 url(../images/progress.gif) scroll repeat 0 0;
+  height: 15px;
 }
 
 div.field.upload div.message {

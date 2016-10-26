@@ -39,9 +39,9 @@
         
     });
     
-    // Create Animated Icons for Buttons:
+    // Create Animated Icons for Action Buttons:
     
-    $(".cms .ss-ui-button > .ui-button-text").entwine({
+    $(".cms .ss-ui-button.action > .ui-button-text").entwine({
         
         onmatch: function() {
             
