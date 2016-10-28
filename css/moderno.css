@@ -1444,6 +1444,14 @@ body.cms.ss-uploadfield-edit-iframe span.readonly,
   border: 1px solid #C4C6C8 !important;
 }
 
+.htmleditorfield-linkform .step2 {
+  margin: 15px 0;
+}
+
+.htmleditorfield-dialog #LinkType {
+  margin-top: 0;
+}
+
 .htmleditorfield-dialog .ss-insert-media,
 .htmleditorfield-dialog .Actions,
 .htmleditorfield-dialog .ss-insert-link {
