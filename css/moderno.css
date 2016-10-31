@@ -1304,6 +1304,7 @@ li.select2-results__option--highlighted {
 .ss-toggle .ui-accordion-content {
   padding: 0;
   border-color: #C4C6C8;
+  background: #fff none;
 }
 
 .ss-toggle .ui-accordion-header.ui-state-default {
