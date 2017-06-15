@@ -4,13 +4,18 @@
 
 A [SilverStripe](http://silverstripe.org) module to give the CMS a more modern, flat appearance, while endeavouring to keep with the spirit of the original look and feel.
 
+**NOTE:** this module is for **SilverStripe v3 only** and is no longer
+being actively developed.  For a SilverStripe v4 alternative, please
+consider the [SilverWare Admin][silverware-admin] module, which
+is the spiritual successor to Moderno for SS4.
+
 ## Requires ##
 
-* SilverStripe 3.1 or newer
+* SilverStripe 3.1 or newer, SilverStripe v4 is **not** supported
 
 ## Features ##
 
-* **NEW:** branding settings for app name, app link, logo and loading images
+* branding settings for app name, app link, logo and loading images
 * site config panel with color picker fields
 * resizable site tree
 * Flat, modern, minimalist look and feel
@@ -79,14 +84,9 @@ This module started as a simple CSS file of tweaks that quickly got way out of h
 
 ![Moderno Admin](http://i.imgur.com/WGeGbEP.png "Moderno Admin")
 
-## To Do ##
-
-* Skin the ugly TinyMCE popups.
-* Greatly improve CSS, switch to Sass/LESS?
-* Change to using SVG icons for page types?
-* Replace a few more bitmap icons, e.g. search icon in dropdowns, GridField sorting icons, AssetAdmin icons, and permissions icons for Members.
-
 ## Attribution ##
 
 * Uses some icons by [Yusuke Kamiyamane](http://p.yusukekamiyamane.com/). Licensed under a [Creative Commons Attribution 3.0 License](http://creativecommons.org/licenses/by/3.0/).
 * Uses [Font Awesome](http://fontawesome.io) by [Dave Gandy](https://github.com/davegandy).
+
+[silverware-admin]: https://github.com/praxisnetau/silverware-admin
